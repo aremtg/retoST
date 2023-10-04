@@ -1,0 +1,11 @@
+front
+
+estructura react ---> next js, vue js, vite js 
+css  ---> boostrap, bulma, tailwinds
+
+back
+
+node js    ---> expres, rest, gpet
+sql or nosql  --- >> mysql / mongodb
+
+git para controlar versiones
