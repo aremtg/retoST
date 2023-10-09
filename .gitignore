@@ -1,8 +1,2 @@
 main.exe
-run_client.bat
-run_server.bat
-<<<<<<< HEAD
-start.bat
-=======
-start.bat
->>>>>>> 2a42b55d839452a69ba79f70d95e238b0d536d18
+main.py
