@@ -11,7 +11,9 @@ def pull():
     os.system("git pull")
 
 def run():
-    os.chdir(os.path.join(os.path.dirname(os.path.realpath(__file__)), "client"))
+    os.chdir(os.path.join(os.path.dirname(os.path.realpath(__file__))))
+    subprocess.Popen(["node", "server.js"])
+    os.chdir("client")
     subprocess.Popen(["npm", "run", "dev"], shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
 def clear():
@@ -28,16 +30,20 @@ def main_menu():
         option = input("Selecciona una opción: ")
 
         if option == "1":
+            print("Ejecutando.\n")
             push()
             input("Presione ENTER para continuar.")
             clear()
         elif option == "2":
+            print("Ejecutando.\n")
             pull()
             input("Presione ENTER para continuar.")
             clear()
         elif option == "3":
+            print("Ejecutando.\n")
             run()
-            print(Fore.GREEN + "Proyecto iniciado en: http://localhost:5173" + Style.RESET_ALL)
+            print(Fore.GREEN + "Cliente iniciado en: http://localhost:5173\n" + Style.RESET_ALL)
+            print(Fore.GREEN + "Servidor iniciado en: http://localhost:3000" + Style.RESET_ALL)
             input("Presione ENTER para continuar.")
             clear()
         elif option =="9":
