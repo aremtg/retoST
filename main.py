@@ -2,6 +2,12 @@ import os
 import subprocess
 from colorama import Fore, Style, init
 
+init()
+server_process = None  
+client_process = None 
+FOLDER = os.path.dirname(os.path.abspath(__file__))
+state = False
+
 def push():
     commit = input("Ingresa un comentario: ")
     os.system(f'git add . && git commit -m "{commit}" && git push origin main')
@@ -17,6 +23,7 @@ def start():
     print(Fore.GREEN + "Cliente iniciado en: http://localhost:5173\n" + Style.RESET_ALL)
     print(Fore.GREEN + "Servidor iniciado en: http://localhost:3000" + Style.RESET_ALL)
     return server_process, client_process
+
 def stop():
     os.system("taskkill /F /IM node.exe > NUL 2>&1")
     print(Fore.RED + "Cliente detenido.\n" + Style.RESET_ALL)
@@ -31,8 +38,8 @@ def clear():
     os.system("cls" if os.name == "nt" else "clear")
 
 def main_menu():
+    global state  # Declarar state como global
     while True:
-        state = False
         print("--------------")
         print("[1] Hacer Push")
         print("[2] Hacer Pull")
@@ -75,8 +82,4 @@ def main_menu():
             print("Ingresa una opción válida.")
             clear()
 
-init()
-server_process = None  
-client_process = None 
-FOLDER = os.path.dirname(os.path.abspath(__file__))
 main_menu()
