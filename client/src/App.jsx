@@ -2,14 +2,17 @@ import { useState } from 'react'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Nav from './componentes/nav/nav'
+import Caja from './componentes/caja/Caja'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className=''>
-        <Nav/>
-    </div>
+    <>
+      <Nav/>
+      <Caja>
+        Buenas tardes
+      </Caja>
+    </>
+    
   )
 }
 

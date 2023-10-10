@@ -1,72 +1,6 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 /* -------------------------- */
 :root {
   --primario: #59a900;
@@ -74,11 +8,14 @@ button:focus-visible {
   --blanco: rgb(255, 255, 255);
   --gradi-violeta: linear-gradient(to bottom, #ffffff, #d4c9f4, #af93e5, #8f5ad0, #7209b7);
   --gradi-verde: linear-gradient(to top, #39a900, #4db520, #5fc234, #70ce45, #81db56, #90e269, #9fea7a, #aef18c, #bef4a3, #cef7b9, #defacf, #edfde5);
+  --gradi-amarillo: linear-gradient(to top, #f6ff26, #f7ff55, #f9ff76, #faff92, #fbffad);
+  --gradi-amarillo2: linear-gradient(to top, #f3fd11, #f5fe4e, #f7fe72, #f9ff91, #fbffad);
   --modo-noche: rgb(0, 2, 20);
   --clr-gris: rgba(206, 206, 206, 0.61);
 
-  --sombra-suave: -2px 3px 4px 0px #dadada85;
-  --sombra-suave-cajas: -2px 3px 4px 0px rgba(0, 0, 0, 0.301);
+  --sombra1: -2px 3px 4px 0px #dadada85;
+  --sombra2: -2px 3px 4px 0px rgba(0, 0, 0, 0.301);
+  --sombra-solida: 0px 2px 0px 0px #dadada85;
   --fondo-footer: rgba(153, 153, 153, 0.76);
 }
 
@@ -91,12 +28,9 @@ button:focus-visible {
 
 body {
   width: 100%;
-  min-width: 200px;
-  min-height: 100vh;
-  background-image: var(--gradi-violeta);
-  display: flex;
-  flex-wrap: wrap;
-
+  height: 100vh;
+  max-height: 100vh;
+  background-image: var(--gradi-amarillo2);
   &::-webkit-scrollbar {
       width: 10px;
   }
@@ -111,18 +45,7 @@ body {
       border-radius: 180px;
   }
 }
-.is-flex {
-  display: flex !important;
-}
-.input-form{
-  width: 85%;
-  font-size: 16px;
-  border: none;
-  outline: none;
-  border-radius: 7px;
-  padding: 6px 7px;
-  background-color: white;
-}
+
 /* estilo para contenedores de botones */
 .box-button {
   display: flex;

@@ -1,0 +1,10 @@
+.caja {
+    width: max-content;
+    padding: .5rem;
+    display: flex;
+    border-radius: 15px;
+    align-items: center;
+    background-color: white;
+  
+}
+  
