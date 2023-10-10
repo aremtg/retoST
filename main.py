@@ -1,9 +1,11 @@
 import os
 import subprocess
-import signal
+import psutil
 from colorama import Fore, Style, init
 init()
 state = False
+server_process = None  
+client_process = None 
 
 def push():
     commit = input("Ingresa un comentario: ")
@@ -14,16 +16,17 @@ def pull():
 
 def start():
     os.chdir(os.path.join(os.path.dirname(os.path.realpath(__file__))))
-    subprocess.Popen(["node", "server.js"])
+    server_process = subprocess.Popen(["node", "server.js"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     os.chdir("client")
-    subprocess.Popen(["npm", "run", "dev"])
+    client_process = subprocess.Popen(["npm", "run", "dev"], shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     print(Fore.GREEN + "Cliente iniciado en: http://localhost:5173\n" + Style.RESET_ALL)
     print(Fore.GREEN + "Servidor iniciado en: http://localhost:3000" + Style.RESET_ALL)
-
+    return server_process, client_process
 def stop():
-    os.system('taskkill /f /im node.exe >nul 2>nul')
+    os.system("taskkill /F /IM node.exe > NUL 2>&1")
     print(Fore.RED + "Cliente detenido.\n" + Style.RESET_ALL)
     print(Fore.RED + "Servidor detenido." + Style.RESET_ALL)
+
 
 def code():
     os.system("code .")
