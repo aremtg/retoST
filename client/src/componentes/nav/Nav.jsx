@@ -1,5 +1,5 @@
 import React from 'react'
-import './nav.css'
+import './nav.module.css'
 import Logo from '../logo/Logo'
 import UserProfile from '../userImgName/UserImgName'
 
