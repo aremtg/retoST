@@ -1,9 +1,9 @@
-import './logo.module.css'
+import estilos from './logo.module.css'
 
 function Logo() {
   return (
     <>
-        <span className='logo-title'>Wee</span>
+        <span className={estilos.logo}>Wee</span>
     </>
   )
 }

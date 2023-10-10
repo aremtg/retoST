@@ -1,18 +1,18 @@
 import React from 'react'
-import './nav.module.css'
+import estilos from './nav.module.css'
 import Logo from '../logo/Logo'
 import UserProfile from '../userImgName/UserImgName'
 
 function Nav() {
   return (
-    <div className='contNav'>
+    <div className={estilos.contNav}>
       <Logo />
-      <nav className="nav">
-        <ul className="nav-list">
-          <li className="nav-item">Inicio</li>
-          <li className="nav-item">Aplicacion</li>
-          <li className="nav-item">Galeria</li>
-          <li className="nav-item">Mi perfil</li>
+      <nav className={estilos.nav}>
+        <ul className={estilos.navList}>
+          <li className={estilos.navItem}>Inicio</li>
+          <li className={estilos.navItem}>Aplicacion</li>
+          <li className={estilos.navItem}>Galeria</li>
+          <li className={estilos.navItem}>Mi perfil</li>
         </ul>
       </nav>
       <UserProfile username="Saremd" profileImage="src\images\foto.png" />

@@ -31,21 +31,21 @@ body {
   height: 100vh;
   max-height: 100vh;
   background-image: var(--gradi-amarillo2);
-  &::-webkit-scrollbar {
-      width: 10px;
-  }
 
-  &::-webkit-scrollbar-track {
-      background-color: #eceef2;
-      border-radius: 180px;
-  }
-
-  &::-webkit-scrollbar-thumb {
-      background-color: var(--primario);
-      border-radius: 180px;
-  }
+}
+&::-webkit-scrollbar {
+  width: 10px;
 }
 
+&::-webkit-scrollbar-track {
+  background-color: #eceef2;
+  border-radius: 180px;
+}
+
+&::-webkit-scrollbar-thumb {
+  background-color: var(--primario);
+  border-radius: 180px;
+}
 /* estilo para contenedores de botones */
 .box-button {
   display: flex;

@@ -11,14 +11,14 @@
   border-radius: 15px;
   padding:5px 10px;
 }
-.nav-list {
+.navList {
   list-style: none;
   gap: 1.5rem;
   display: flex;
   justify-content: center;
 }
 
-.nav-item {
+.navItem {
   text-align: center;
   color: #000000;
   font-weight: 600;
@@ -27,7 +27,7 @@
   padding: 5px;
 }
 
-.nav-item:hover {
+.navItem:hover {
   background-color: rgba(226, 226, 226, 0.589);
 }
 
@@ -43,13 +43,13 @@
   .nav{
     width: 100%;
   }
-  .nav-list {
+  .navList{
     width: 100%;
     flex-direction: column; /* Apila los elementos en pantallas pequeñas */
     align-items: center; /* Centra los elementos verticalmente en pantallas pequeñas */
   }
   
-  .nav-item {
+  .navItem {
     width: 100%;
     margin: 5px 0; /* Añade espacio entre los elementos en pantallas pequeñas */
   }

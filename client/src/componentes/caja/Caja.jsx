@@ -1,7 +1,7 @@
-import './caja.module.css';
+import estilos from './caja.module.css';
 
 const Caja = ({ children }) => {
-  return <div className="caja">{children}</div>;
+  return <div className={estilos.caja}>{children}</div>;
 }
 
 export default Caja;

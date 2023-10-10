@@ -1,14 +1,14 @@
-.user-profile{
-    background-color: white;
+.boxUser{
+    background-color: rgb(255, 255, 255);
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.user-profile img{
+.boxUser img{
     width: 80px;
     border-radius: 100%;
 }
-.user-profile span{
+.boxUser span{
     font-weight: 700;
 }

@@ -1,7 +1,7 @@
-import './userImgName.css'
+import estilos from './userImgName.module.css'
 const UserProfile = ({ username, profileImage }) => {
   return (
-    <div className="user-profile">
+    <div className={estilos.boxUser}>
       <img src={profileImage} alt="Foto de perfil" />
       <span>{username}</span>
     </div>
