@@ -1,11 +1,14 @@
 import os
 import subprocess
-import psutil
 from colorama import Fore, Style, init
+
 init()
 state = False
 server_process = None  
 client_process = None 
+FOLDER = os.path.dirname(os.path.abspath(__file__))
+os.chdir(FOLDER)
+os.system("pip install -r requirements.txt > NUL 2>&1")
 
 def push():
     commit = input("Ingresa un comentario: ")
@@ -15,7 +18,7 @@ def pull():
     os.system("git pull")
 
 def start():
-    os.chdir(os.path.join(os.path.dirname(os.path.realpath(__file__))))
+    os.chdir(FOLDER)
     server_process = subprocess.Popen(["node", "server.js"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     os.chdir("client")
     client_process = subprocess.Popen(["npm", "run", "dev"], shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
@@ -43,7 +46,9 @@ while True:
     if state == False:
         print("[3] Iniciar Servidor " +Fore.RED+ "(Estado: Offline)" + Style.RESET_ALL)
     else:
-        print("[3] Apagar Servidor " +Fore.GREEN+ "(Estado: Online)" + Style.RESET_ALL)
+        print("[3] Apagar Servidor " +Fore.GREEN+ "(Estado: Online)\n" + Style.RESET_ALL)
+        print(Fore.GREEN + "Cliente iniciado en: http://localhost:5173" + Style.RESET_ALL)
+        print(Fore.GREEN + "Servidor iniciado en: http://localhost:3000\n" + Style.RESET_ALL)
     print("[4] Abrir entorno vsCode")
     print("\n[9] Salir")
     print("--------------")
