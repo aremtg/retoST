@@ -2,14 +2,6 @@ import os
 import subprocess
 from colorama import Fore, Style, init
 
-init()
-state = False
-server_process = None  
-client_process = None 
-FOLDER = os.path.dirname(os.path.abspath(__file__))
-os.chdir(FOLDER)
-os.system("pip install -r requirements.txt > NUL 2>&1")
-
 def push():
     commit = input("Ingresa un comentario: ")
     os.system(f'git add . && git commit -m "{commit}" && git push origin main')
@@ -38,46 +30,53 @@ def clear():
     input("Presione ENTER para continuar.")
     os.system("cls" if os.name == "nt" else "clear")
 
-
-while True:
-    print("--------------")
-    print("[1] Hacer Push")
-    print("[2] Hacer Pull")
-    if state == False:
-        print("[3] Iniciar Servidor " +Fore.RED+ "(Estado: Offline)" + Style.RESET_ALL)
-    else:
-        print("[3] Apagar Servidor " +Fore.GREEN+ "(Estado: Online)\n" + Style.RESET_ALL)
-        print(Fore.GREEN + "Cliente iniciado en: http://localhost:5173" + Style.RESET_ALL)
-        print(Fore.GREEN + "Servidor iniciado en: http://localhost:3000\n" + Style.RESET_ALL)
-    print("[4] Abrir entorno vsCode")
-    print("\n[9] Salir")
-    print("--------------")
-    option = input("Selecciona una opción: ")
-
-    if option == "1":
-        print("Ejecutando.\n")
-        push()
-        clear()
-    elif option == "2":
-        print("Ejecutando.\n")
-        pull()
-        clear()
-    elif option == "3":
-        print("Ejecutando.\n")
+def main_menu():
+    while True:
+        state = False
+        print("--------------")
+        print("[1] Hacer Push")
+        print("[2] Hacer Pull")
         if state == False:
-            start()
-            state = True
-            clear()
+            print("[3] Iniciar Servidor " +Fore.RED+ "(Estado: Offline)" + Style.RESET_ALL)
         else:
-            stop()
-            state = False
+            print("[3] Apagar Servidor " +Fore.GREEN+ "(Estado: Online)\n" + Style.RESET_ALL)
+            print(Fore.GREEN + "Cliente iniciado en: http://localhost:5173" + Style.RESET_ALL)
+            print(Fore.GREEN + "Servidor iniciado en: http://localhost:3000\n" + Style.RESET_ALL)
+        print("[4] Abrir entorno vsCode")
+        print("\n[9] Salir")
+        print("--------------")
+        option = input("Selecciona una opción: ")
+
+        if option == "1":
+            print("Ejecutando.\n")
+            push()
             clear()
-    elif option == "4":
-        print("Ejecutando.\n")
-        code()
-        clear()
-    elif option =="9":
-        break
-    else:
-        print("Ingresa una opción válida.")
-        clear()
+        elif option == "2":
+            print("Ejecutando.\n")
+            pull()
+            clear()
+        elif option == "3":
+            print("Ejecutando.\n")
+            if state == False:
+                start()
+                state = True
+                clear()
+            else:
+                stop()
+                state = False
+                clear()
+        elif option == "4":
+            print("Ejecutando.\n")
+            code()
+            clear()
+        elif option =="9":
+            break
+        else:
+            print("Ingresa una opción válida.")
+            clear()
+
+init()
+server_process = None  
+client_process = None 
+FOLDER = os.path.dirname(os.path.abspath(__file__))
+main_menu()
