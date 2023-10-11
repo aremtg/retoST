@@ -33,6 +33,7 @@ def stop():
 
 
 def code():
+    os.chdir(FOLDER)
     os.system("code .")
 
 def clear():
