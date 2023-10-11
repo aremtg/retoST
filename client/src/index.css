@@ -17,13 +17,16 @@
   --sombra2: -2px 3px 4px 0px rgba(0, 0, 0, 0.301);
   --sombra-solida: 0px 2px 0px 0px #dadada85;
   --fondo-footer: rgba(153, 153, 153, 0.76);
+
+  --textoGrande: 3rem;
+  --textoNormal:1rem: 
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Work Sans', sans-serif;
+  font-family: monospace;
 }
 
 body {
@@ -53,7 +56,14 @@ body {
   justify-content: center;
   gap: .5rem;
 }
+.tituloPagina{
+  text-align: center;
+  font-size: 2rem;
+}
 
+.resaltar{
+  font-weight: 600;
+}
 .my-button {
   color: white;
   border: none;

@@ -1,11 +1,21 @@
-import React from 'react';
+import Caja from "../caja/Caja";
 
-function Inicio(props) {
+const Inicio = () => {
     return (
-        <div>
-            
-        </div>
+      <div>
+        <h1 className="tituloPagina">Página de Inicio</h1>
+        
+        <Caja>
+          <Caja>
+              1 this is my contenidoooo
+          </Caja>
+          <Caja>
+              2
+          </Caja>
+        </Caja>
+        {/* Contenido de la página de Inicio */}
+      </div>
     );
-}
-
-export default Inicio;
+  }
+  
+  export default Inicio;
