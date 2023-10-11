@@ -1,9 +1,9 @@
-import UserProfile from "../userImgName/UserImgName";
+import UserProfile from "../../components/userImgName/UserImgName";
 import InfoCuenta from "./InfoCuenta";
-import estilos from './perfil.module.css'
-import Caja from "../caja/Caja";
+import estilos from './profile.module.css'
+import Caja from "../../components/caja/Caja";
 
-const Perfil = () => {
+const Profile = () => {
   const user = 'Pepe_123'
     return (
       <div>
@@ -11,7 +11,7 @@ const Perfil = () => {
         <Caja>
           <UserProfile 
               useruser={user}
-              profileImage="src\images\foto.png"
+              profileImage="public/img/pfp_1.png"
               className={estilos.boxUser}
           />
           <InfoCuenta
@@ -25,11 +25,10 @@ const Perfil = () => {
         <Caja>
             <h1>Un titulo para algo</h1>
 
-        </Caja>
-        {/* Contenido de la página de perfil */}
-        
+        </Caja>        
       </div>
     );
   }
   
-  export default Perfil;
+  export default Profile;
+  

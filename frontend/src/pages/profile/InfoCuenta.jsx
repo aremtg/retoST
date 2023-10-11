@@ -1,4 +1,4 @@
-import estilos from './perfilInfoCuenta.module.css'
+import estilos from './profileInfoCuenta.module.css'
 const InfoCuenta = ({ useruser, username, lastname, usercorreo, className }) => {
   return (
     <div className={`${estilos.boxInfoCuenta} ${className}`}>

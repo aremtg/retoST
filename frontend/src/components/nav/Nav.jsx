@@ -13,13 +13,15 @@ const Nav = () =>{
       <nav className={estilos.nav}>
         <ul className={estilos.navList}>
           <li className={estilos.navItem}><Link to="/">Inicio</Link></li>
-          <li className={estilos.navItem}><Link to="/perfil">Perfil</Link></li>
         </ul>
       </nav>
+      <Link to="/profile">
       <UserProfile 
-        useruser="Pepe_123" 
-        profileImage="src\images\foto.png"
+        useruser="Pepe" 
+        profileImage="public/img/pfp_1.png"
       />
+      </Link>
+      
     </div>
   )
 }
