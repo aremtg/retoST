@@ -17,7 +17,9 @@ def pull():
 
 def start():
     os.chdir(FOLDER)
+    os.chdir("backend")
     server_process = subprocess.Popen(["node", "server.js"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    os.chdir(FOLDER)
     os.chdir("frontend")
     client_process = subprocess.Popen(["npm", "run", "dev"], shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     print(Fore.GREEN + "Cliente iniciado en: http://localhost:5173\n" + Style.RESET_ALL)
