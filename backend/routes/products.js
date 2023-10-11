@@ -1,16 +1,16 @@
 const express = require('express');
 const router = express.Router();
-const db = require('../config/db');
+const Product = require('../models/product');
 
-// Ruta para obtener la lista de productos
-router.get('/products', (req, res) => {
-  db.query('SELECT * FROM productos', (err, results) => {
-    if (err) {
-      console.error(err);
-      return res.status(500).json({ error: 'Error al obtener productos' });
-    }
-    res.json(results);
-  });
+// Actualiza la ruta para que coincida con la URL en tu componente React
+router.get('/products', async (req, res) => {
+  try {
+    const products = await Product.findAll();
+    res.json(products);
+  } catch (error) {
+    console.error('Error al obtener productos: ' + error);
+    res.status(500).json({ error: 'Error al obtener productos' });
+  }
 });
 
 module.exports = router;

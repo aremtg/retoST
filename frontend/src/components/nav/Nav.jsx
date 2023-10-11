@@ -18,7 +18,7 @@ const Nav = () =>{
       <Link to="/profile">
       <UserProfile 
         useruser="Pepe" 
-        profileImage="public/img/pfp_1.png"
+        profileImage="src/img/pfp_1.png"
       />
       </Link>
       
