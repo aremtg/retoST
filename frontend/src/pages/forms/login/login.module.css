@@ -1,5 +1,5 @@
 form{
-    width: 200px;
+    width: 400px;
     background-color: var(--blanco);
     border-radius: 15px;
     padding: .5rem;
@@ -7,8 +7,20 @@ form{
 form h1{
     text-align: center;
 }
+.control{
+    margin-bottom: 1rem;
+}
 .control input{
-    background-color: var(--primario);
+    width: 100%;
+    background-color: var(--gris);
     border-radius: 10px;
     padding: 5px;
+}
+.divBtnForm{
+    display: flex;
+    justify-content: center;
+}
+.divBtnForm button{
+    background-color: var(--primario);
+    color: var(--blanco);
 }

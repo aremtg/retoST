@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Caja from "../../components/caja/Caja";
 import ProductoCard from "../../components/contenido/ProductoCard";
+import Box from "../../components/miniComponents/Box";
 const Home = () => {
   const [productos, setProductos] = useState([]);
 
@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <div>
       <br />      
-      <Caja>
+      <Box>
         <div className="contedorFlex">
           {productos.map((producto) => (
             <ProductoCard
@@ -30,8 +30,8 @@ const Home = () => {
             />
           ))}
         </div>
-      </Caja>
-      {/* <Caja>
+      </Box>
+      {/* <Box>
         {productos.map((producto) => (
           <div key={producto.id}>
             <h3>{producto.name}</h3>
@@ -39,7 +39,7 @@ const Home = () => {
             <p>Stock: {producto.stock}</p>
           </div>
         ))}
-      </Caja> */}
+      </Box> */}
     </div>
   );
 };

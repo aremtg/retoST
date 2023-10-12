@@ -11,7 +11,7 @@
   --gradi-verde: linear-gradient(to top, #39a900, #4db520, #5fc234, #70ce45, #81db56, #90e269, #9fea7a, #aef18c, #bef4a3, #cef7b9, #defacf, #edfde5);
   --gradi: linear-gradient(to bottom, #051937, #142258, #362777, #612390, #9200a1);
   --modo-noche: rgb(0, 2, 20);
-  --clr-gris: rgba(206, 206, 206, 0.61);
+  --gris: rgb(238, 238, 238);
 
   --sombra1: -2px 3px 4px 0px rgba(0, 0, 0, 0.301);
   --sombra2: -2px 3px 4px 0px rgba(0, 0, 0, 0.301);
@@ -79,7 +79,7 @@ body {
 .resaltar{
   font-weight: 600;
 }
-.my-button {
+.my_button {
   border: none;
   padding: 5px 10px;
   border-radius: 10px;

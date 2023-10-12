@@ -1,15 +1,15 @@
 
+import Box from "../../components/miniComponents/Box";
 import UserProfile from "../../components/userImgName/UserImgName";
 import InfoCuenta from "./InfoCuenta";
 import estilos from './profile.module.css'
-import Caja from "../../components/caja/Caja";
 
 const Profile = () => {
   const user = 'Pepe_123'
     return (
       <div>
         <h1 className="tituloPagina">Página de Perfil</h1>
-        <Caja>
+        <Box>
           <UserProfile 
               useruser={user}
               profileImage="img/pfp_1.png"
@@ -21,12 +21,12 @@ const Profile = () => {
               lastname="Guzman"
               usercorreo="pepe@gmail.com" 
           />
-        </Caja>
+        </Box>
         <br />
-        <Caja>
+        <Box>
             <h1>Un titulo para algo</h1>
 
-        </Caja>        
+        </Box>        
       </div>
     );
   }
