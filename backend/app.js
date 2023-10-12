@@ -1,19 +1,14 @@
 const express = require('express');
 const app = express();
-const productosRouter = require('./routes/products');
+const apiRouter = require('./api'); // Importar las rutas de la API
 const cors = require('cors');
 
 app.use(cors()); // Configurar CORS para permitir todas las solicitudes
 
-app.get('/', (req, res) => {
-  res.send('¡Hola desde el servidor backend!');
-});
+// Usar las rutas de la API
+app.use('/api', apiRouter);
 
-// Corrige la ruta aquí para que coincida con la URL en tu componente React
-app.use('/products', productosRouter);
-
-const port = process.env.PORT || 3000;
-
-app.listen(port, () => {
-  console.log(`Server is listening on port ${port}`);
+// Iniciar el servidor en el puerto 3000
+app.listen(3000, () => {
+  console.log('Servidor Node.js en ejecución en el puerto 3000');
 });
