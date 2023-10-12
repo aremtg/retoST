@@ -11,7 +11,7 @@ const Nav = () =>{
       <Logo />
       <nav className={estilos.nav}>
         <ul className={estilos.navList}>
-          <li ><Link to="/" className={estilos.linkItem}>Home</Link></li>
+          <li ><Link to="/home" className={estilos.linkItem}>Home</Link></li>
           <li ><Link to="/profile" className={estilos.linkItem}>Profile</Link></li>
         </ul>
       </nav>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Caja from "../../components/caja/Caja";
-
+import ProductoCard from "../../components/contenido/ProductoCard";
 const Home = () => {
   const [productos, setProductos] = useState([]);
 
@@ -17,15 +17,12 @@ const Home = () => {
   return (
     <div>
       <h1 className="tituloPagina">Página de Inicio</h1>
-      
-
-
       <Caja>
         <div className="contedorFlex">
             <ProductoCard
               producto={{
                 nombre: 'Producto 1',
-                imagen: 'src/images/compu.jpg',
+                imagen: 'src/img/compu.jpg',
                 especificaciones: 'Especificaciones del producto 1',
                 precioVenta: 100
               }}
@@ -34,7 +31,7 @@ const Home = () => {
             <ProductoCard
               producto={{
                 nombre: 'Producto 2',
-                imagen: 'src/images/compu.jpg',
+                imagen: 'src/img/compu.jpg',
                 especificaciones: 'Especificaciones del producto 1',
                 precioVenta: 100
               }}
@@ -43,7 +40,7 @@ const Home = () => {
             <ProductoCard
               producto={{
                 nombre: 'Producto 2',
-                imagen: 'src/images/compu.jpg',
+                imagen: 'src/img/compu.jpg',
                 especificaciones: 'Especificaciones del producto 1',
                 precioVenta: 100
               }}

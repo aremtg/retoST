@@ -1,5 +1,5 @@
 import estilos from './productoCard.module.css'
-const ProductoCard = ({ producto, agregarAlCarrito }) => {
+const ProductoCard = ({ producto }) => {
     return (
         <div className={estilos.productoCard}>
             <img src={producto.imagen} alt={producto.nombre} />
