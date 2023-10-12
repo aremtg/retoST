@@ -2,18 +2,18 @@
     display: flex;
     align-items: center;
 }
-.link:hover{
-    color: initial;
+.link{
+    color: var(--blanco);
 }
 .boxUser img{
     width: 70px;
-    border: 3px solid var(--blanco);
+    border: 3px solid var(--primario);
     border-radius: 100%;
 }
 .boxUser span{
     font-weight: 700;
     font-size: .8rem;
-    background-color: var(--blanco);
+    background-color: var(--primario );
     border-radius:0 10px 10px 0;
     padding: .2rem .3rem;
     margin-left: -3px;

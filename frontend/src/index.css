@@ -11,7 +11,7 @@
   --gradi-verde: linear-gradient(to top, #39a900, #4db520, #5fc234, #70ce45, #81db56, #90e269, #9fea7a, #aef18c, #bef4a3, #cef7b9, #defacf, #edfde5);
   --gradi: linear-gradient(to bottom, #051937, #142258, #362777, #612390, #9200a1);
   --modo-noche: rgb(0, 2, 20);
-  --gris: rgb(238, 238, 238);
+  --gris: rgb(211, 211, 211);
 
   --sombra1: -2px 3px 4px 0px rgba(0, 0, 0, 0.301);
   --sombra2: -2px 3px 4px 0px rgba(0, 0, 0, 0.301);
@@ -33,11 +33,7 @@
 body {
   width: 100%;
   height: 100%;
-  --color: rgba(102, 90, 90, 0.3);
-  background-color: #2827298f;
-  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
-      linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
-  background-size: 55px 55px;
+  background-color:var(--gris);
   /* background-image: var(--gradi);
   background-size: cover;
   background-repeat: no-repeat;
@@ -75,6 +71,9 @@ body {
   flex-wrap: wrap;
   gap: .5rem;
   justify-content: space-between;
+}
+.myLink{
+  
 }
 .resaltar{
   font-weight: 600;

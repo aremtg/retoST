@@ -3,7 +3,7 @@ import estilos from './logo.module.css'
 function Logo() {
   return (
     <>
-        <span className={estilos.logo}>Importaciones ST</span>
+        <img src="src/img/logo.png"  className={estilos.logo} alt="logoST" />
     </>
   )
 }

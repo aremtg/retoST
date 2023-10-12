@@ -8,7 +8,6 @@ const Profile = () => {
   const user = 'Pepe_123'
     return (
       <div>
-        <h1 className="tituloPagina">Página de Perfil</h1>
         <Box>
           <UserProfile 
               useruser={user}

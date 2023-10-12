@@ -1,4 +1,5 @@
 import Box from '../../../components/miniComponents/Box'
+import ButtonLink from '../../../components/miniComponents/ButtonLink'
 import estilos from './login.module.css'
 function Login() {
   return (
@@ -17,14 +18,21 @@ function Login() {
             </div>
 
             <div className={estilos.divBtnForm}>
-                <button className="my_button">
-                    Login
-                </button>
+                <ButtonLink
+                    to='/login'
+                    texto='Login'
+                    className='my_button'
+                />
+                <ButtonLink
+                    to='/register'
+                    texto='Ya tengo cuenta'
+                    className='myLink'
+                />   
             </div>
+            
         </form>
-        
     </Box>
-  )
+)
 }
 
 export default Login

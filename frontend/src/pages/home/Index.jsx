@@ -15,7 +15,6 @@ const Home = () => {
 
   return (
     <div>
-      <h1 className="tituloPagina">Página de Inicio</h1>
       <Box>
         <div className="contedorFlex">
           {products.map((product) => (
