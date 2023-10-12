@@ -4,3 +4,11 @@ form{
     border-radius: 15px;
     padding: .5rem;
 }
+form h1{
+    text-align: center;
+}
+.control input{
+    background-color: var(--primario);
+    border-radius: 10px;
+    padding: 5px;
+}

@@ -5,18 +5,18 @@ function Login() {
     <>
         <form action="">
             <h1>login</h1>
-            <div className="control">User name
+            <div className={estilos.control}>User name
                 <label htmlFor="">
                     <input type="text" />
                 </label>
             </div>
-            <div className="control">Password
+            <div className={estilos.control}>Password
                 <label htmlFor="">
                     <input type="password"/>
                 </label>
             </div>
 
-            <div className="btnForm">
+            <div className={estilos.btnForm}>
                 <button>
                     Login
                 </button>
