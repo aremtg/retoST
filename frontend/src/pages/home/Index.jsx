@@ -7,7 +7,7 @@ const Home = () => {
 
   useEffect(() => {
     // Realiza una solicitud a tu servidor para obtener la lista de productos
-    axios.get("http://localhost:3000/products").then((response) => {
+    axios.get("http://localhost:3000/api/products").then((response) => {
       setProductos(response.data);
       console.log(response.data); // Agrega esto para verificar si los datos se están recuperando
 
