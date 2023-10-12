@@ -48,6 +48,7 @@ const Home = () => {
             />
             
           </div>
+          
         </Caja>
       {/* <Caja>
         {productos.map((producto) => (
