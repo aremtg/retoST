@@ -1,13 +1,18 @@
-import estilos from './productoCard.module.css'
+import React from "react";
+import estilos from './productoCard.module.css';
+
 const ProductoCard = ({ producto }) => {
-    return (
-        <div className={estilos.productoCard}>
-            <img src={producto.imagen} alt={producto.nombre} />
-            <h3>{producto.nombre}</h3>
-                <p>Precio de Venta: ${producto.precioVenta}</p>
-            <button className={`${estilos.botonAgregar} my-button`}>Agregar</button>
-        </div>
-    );
+  // Combina la ruta base del servidor con la ruta relativa de la imagen
+  const imageUrl = `http://localhost:5173/uploads/${producto.image}`;
+
+  return (
+    <div className={estilos.productoCard}>
+      <img src={imageUrl} alt={producto.name} />
+      <h3>{producto.name}</h3>
+      <p>Precio: ${producto.price}</p>
+      <button className={`${estilos.botonAgregar} my-button`}>Agregar</button>
+    </div>
+  );
 }
 
 export default ProductoCard;
