@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import './App.css'
-import Nav from './componentes/nav/Nav'
+import Nav from './components/nav/Nav'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Inicio from './componentes/vistas/inicio/Inicio'
-import Perfil from './componentes/vistas/perfil/Perfil'
+import Home from './pages/home/Index.jsx'
+import Profile from './pages/profile/Index.jsx'
 
 function App() {
   return (
@@ -11,8 +11,8 @@ function App() {
       <BrowserRouter> 
       <Nav/>
         <Routes>
-          <Route path="/" element={<Inicio />} />
-          <Route path="/perfil" element={<Perfil />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </BrowserRouter>
       

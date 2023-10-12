@@ -1,0 +1,16 @@
+
+.boxUser{
+    background-color: white;
+    box-shadow: var(--sombra1);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.boxUser img{
+    width: 200px;
+    border-radius: 100%;
+}
+.boxUser span{
+    font-weight: 700;
+}
