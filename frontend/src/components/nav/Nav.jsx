@@ -17,8 +17,8 @@ const Nav = () =>{
       </nav>
       
       <UserProfile 
-        useruser="Pepe" 
-        profileImage="src/img/pfp_1.png"
+        useruser="Ingresar" 
+        profileImage="src/img/user_icon.jpg"
       />
       
     </div>
