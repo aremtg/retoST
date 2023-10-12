@@ -5,6 +5,7 @@
     text-align: center;
     padding: 20px;
     transition: transform 0.3s;
+    color: white;
 }
 .productoCard img{
     width: 250px;

@@ -16,40 +16,21 @@ const Home = () => {
 
   return (
     <div>
-      <h1 className="tituloPagina">Página de Inicio</h1>
+      <br />      
       <Caja>
         <div className="contedorFlex">
+          {productos.map((producto) => (
             <ProductoCard
+              key={producto.id}
               producto={{
-                nombre: 'Producto 1',
-                imagen: 'src/img/compu.jpg',
-                especificaciones: 'Especificaciones del producto 1',
-                precioVenta: 100
+                nombre: productos.nombre,
+                imagen: producto.imagen,
+                precioVenta: producto.precioVenta
               }}
-              
             />
-            <ProductoCard
-              producto={{
-                nombre: 'Producto 2',
-                imagen: 'src/img/compu.jpg',
-                especificaciones: 'Especificaciones del producto 1',
-                precioVenta: 100
-              }}
-              
-            />
-            <ProductoCard
-              producto={{
-                nombre: 'Producto 2',
-                imagen: 'src/img/compu.jpg',
-                especificaciones: 'Especificaciones del producto 1',
-                precioVenta: 100
-              }}
-              
-            />
-            
-          </div>
-          
-        </Caja>
+          ))}
+        </div>
+      </Caja>
       {/* <Caja>
         {productos.map((producto) => (
           <div key={producto.id}>
