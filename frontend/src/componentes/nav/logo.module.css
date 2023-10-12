@@ -1,6 +1,7 @@
 .logo{
     border-radius: 15px;
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 2rem;
     font-weight: 800;
+    color: var(--blanco);
 }

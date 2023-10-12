@@ -12,8 +12,8 @@ const Nav = () =>{
       <Logo />
       <nav className={estilos.nav}>
         <ul className={estilos.navList}>
-          <li className={estilos.navItem}><Link to="/">Inicio</Link></li>
-          <li className={estilos.navItem}><Link to="/perfil">Perfil</Link></li>
+          <li ><Link to="/" className={estilos.linkItem}>Inicio</Link></li>
+          <li ><Link to="/perfil" className={estilos.linkItem}>Perfil</Link></li>
         </ul>
       </nav>
       <UserProfile 
@@ -25,3 +25,4 @@ const Nav = () =>{
 }
 
 export default Nav
+

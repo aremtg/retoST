@@ -1,10 +1,9 @@
-.caja {
-    width: 90%;
+.caja { 
+    width: 96%;
     margin: auto;
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgba(255, 255, 255, 0.242); */
     padding: .5rem;
     display: flex;
-    border-radius: 15px;
+    border-radius: 5px;
     justify-content: space-around;
 }
-  

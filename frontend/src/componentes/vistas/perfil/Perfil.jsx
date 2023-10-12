@@ -1,7 +1,8 @@
-import UserProfile from "../userImgName/UserImgName";
+
 import InfoCuenta from "./InfoCuenta";
 import estilos from './perfil.module.css'
-import Caja from "../caja/Caja";
+import UserProfile from "../../userImgName/UserImgName";
+import Caja from "../../caja/Caja";
 
 const Perfil = () => {
   const user = 'Pepe_123'

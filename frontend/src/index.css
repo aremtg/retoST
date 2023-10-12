@@ -3,17 +3,17 @@
 @tailwind utilities;
 /* -------------------------- */
 :root {
-  --primario: #59a900;
+  --primario:  #7700ff;
+  --verde: #40ff00;
 
   --blanco: rgb(255, 255, 255);
   --gradi-violeta: linear-gradient(to bottom, #ffffff, #d4c9f4, #af93e5, #8f5ad0, #7209b7);
   --gradi-verde: linear-gradient(to top, #39a900, #4db520, #5fc234, #70ce45, #81db56, #90e269, #9fea7a, #aef18c, #bef4a3, #cef7b9, #defacf, #edfde5);
-  --gradi-amarillo: linear-gradient(to top, #f6ff26, #f7ff55, #f9ff76, #faff92, #fbffad);
-  --gradi-amarillo2: linear-gradient(to top, #f3fd11, #f5fe4e, #f7fe72, #f9ff91, #fbffad);
+  --gradi: linear-gradient(to bottom, #051937, #142258, #362777, #612390, #9200a1);
   --modo-noche: rgb(0, 2, 20);
   --clr-gris: rgba(206, 206, 206, 0.61);
 
-  --sombra1: -2px 3px 4px 0px #dadada85;
+  --sombra1: -2px 3px 4px 0px rgba(0, 0, 0, 0.301);
   --sombra2: -2px 3px 4px 0px rgba(0, 0, 0, 0.301);
   --sombra-solida: 0px 2px 0px 0px #dadada85;
   --fondo-footer: rgba(153, 153, 153, 0.76);
@@ -31,11 +31,19 @@
 
 body {
   width: 100%;
-  height: 100vh;
-  max-height: 100vh;
-  background-image: var(--gradi-amarillo2);
-
+  height: 100%;
+  --color: rgba(114, 114, 114, 0.3);
+  background-color: #191a1a;
+  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+      linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+  background-size: 55px 55px;
+  /* background-image: var(--gradi);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Fija el fondo */
+  /* background-position: center; */
 }
+
 &::-webkit-scrollbar {
   width: 10px;
 }
@@ -58,26 +66,23 @@ body {
 }
 .tituloPagina{
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  color: white;
 }
-
+.contedorFlex{
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  justify-content: space-between;
+}
 .resaltar{
   font-weight: 600;
 }
 .my-button {
-  color: white;
   border: none;
-  padding: 10px 20px;
-  border-radius: 20px;
+  padding: 5px 10px;
+  border-radius: 10px;
   cursor: pointer;
-  font-weight: bold;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  gap: .5rem;
-  transition: background-color 0.3s ease;
 }
 .button-clr-rojo {
   background-color: red;

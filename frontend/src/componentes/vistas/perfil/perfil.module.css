@@ -1,6 +1,7 @@
 
 .boxUser{
-    box-shadow: -2px 3px 4px 0px rgba(0, 0, 0, 0.301);
+    background-color: white;
+    box-shadow: var(--sombra1);
     border-radius: 15px;
     display: flex;
     flex-direction: column;

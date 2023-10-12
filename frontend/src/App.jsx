@@ -2,8 +2,8 @@ import { useState } from 'react'
 import './App.css'
 import Nav from './componentes/nav/Nav'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Inicio from './componentes/inicio/Inicio'
-import Perfil from './componentes/perfil/Perfil'
+import Inicio from './componentes/vistas/inicio/Inicio'
+import Perfil from './componentes/vistas/perfil/Perfil'
 
 function App() {
   return (

@@ -5,7 +5,7 @@ const InfoCuenta = ({ useruser, username, lastname, usercorreo, className }) => 
       <label htmlFor="">Usuario: <span  className='resaltar'>{useruser}</span></label>
       <label htmlFor="">Nombres: <span>{username}</span></label>
       <label htmlFor="">Apellidos: <span>{lastname}</span></label>
-<label htmlFor="">Correo: <span>{usercorreo}</span></label>
+      <label htmlFor="">Correo: <span>{usercorreo}</span></label>
       
     </div>
   );

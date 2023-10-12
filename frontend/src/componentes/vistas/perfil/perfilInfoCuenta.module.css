@@ -1,4 +1,5 @@
 .boxInfoCuenta{
+    background-color: white;
     box-shadow: var(--sombra1);
     border-radius: 15px;
     display: flex;
