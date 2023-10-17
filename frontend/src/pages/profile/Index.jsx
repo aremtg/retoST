@@ -1,6 +1,6 @@
 
 import Box from "../../components/miniComponents/Box";
-import UserProfile from "../../components/userImgName/UserImgName";
+import UserProfile from "../../components/miniComponents/UserImgName";
 import InfoCuenta from "./InfoCuenta";
 import estilos from './profile.module.css'
 
@@ -11,8 +11,8 @@ const Profile = () => {
         <Box>
           <UserProfile 
               useruser={user}
-              profileImage="img/pfp_1.png"
-              className={estilos.boxUser}
+              profileImage="src/img/user_icon.jpg"
+              
           />
           <InfoCuenta
               useruser={user}

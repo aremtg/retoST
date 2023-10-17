@@ -1,0 +1,28 @@
+
+.productoCard {
+    width: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .productoCard img {
+    max-width: 100%;
+  }
+  
+  .productoCard h1 {
+    font-size: 1.5em;
+  }
+  
+  .productoCard p {
+    font-size: 1.2em;
+    color: green;
+  }
+  
+  .botonAgregar {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+  }

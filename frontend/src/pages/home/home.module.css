@@ -1,0 +1,36 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+@keyframes floatAnimation {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+}
+
+.imgFlotante {
+width: 400px;
+margin-left: auto;
+animation: floatAnimation 3s infinite ease-in-out;
+}
+.categorias{
+  overflow: hidden;
+  width: 90%;
+  margin: auto;
+}
+.categorias ul li{
+  width: 100%;
+  padding: .5rem;
+  background-color: var(--primario);
+}
+@media screen and (max-width: 700px) {
+  .imgFlotante {
+    width: 50%;
+  }
+}

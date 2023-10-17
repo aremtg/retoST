@@ -1,10 +1,10 @@
+import { Link } from 'react-router-dom'
 import estilos from './logo.module.css'
-
-function Logo() {
+const Logo = ({className}) => {
   return (
-    <>
-        <img src="src/img/logo.png"  className={estilos.logo} alt="logoST" />
-    </>
+    <Link  to="/" >
+      <img src="src/img/logo1.png"  className={`${className} ${estilos.logo}`} alt="logoST" />
+    </Link> 
   )
 }
 

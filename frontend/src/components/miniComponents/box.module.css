@@ -1,9 +1,8 @@
 .caja { 
     width: 90%;
     margin: auto;
-    background-color: var(--blanco);
     padding: .5rem;
+    border-radius: 30px;
     display: flex;
-    border-radius: 15px;
-    justify-content: space-around;
+    flex-wrap: wrap;
 }

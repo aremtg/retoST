@@ -4,8 +4,9 @@ import estilos from './buttonLink.module.css'
 const ButtonLink = ({ to, className ,texto}) => {
     return (
        <Link  to={to} >
-        <button className={className}>
+        <button className={`${className}`}>
             {texto}
+            
         </button>
        </Link>
     );

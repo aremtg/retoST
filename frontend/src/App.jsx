@@ -4,8 +4,8 @@ import Nav from './components/nav/Nav'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/home/Index.jsx'
 import Profile from './pages/profile/Index.jsx'
-import Login from './pages/forms/login';
 import Register from './pages/forms/register/Index';
+import Login from './pages/forms/login/Index';
 
 function App() {
   return (

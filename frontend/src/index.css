@@ -3,18 +3,20 @@
 @tailwind utilities;
 /* -------------------------- */
 :root {
-  --primario:  #7700ff;
+  --primario:  #a541f8;
+  --secundario: #011440;
+  --terciario: #E9E9F7;
   --verde: #40ff00;
 
   --blanco: rgb(255, 255, 255);
   --gradi-violeta: linear-gradient(to bottom, #ffffff, #d4c9f4, #af93e5, #8f5ad0, #7209b7);
   --gradi-verde: linear-gradient(to top, #39a900, #4db520, #5fc234, #70ce45, #81db56, #90e269, #9fea7a, #aef18c, #bef4a3, #cef7b9, #defacf, #edfde5);
-  --gradi: linear-gradient(to bottom, #051937, #142258, #362777, #612390, #9200a1);
+  --gradi: linear-gradient(to bottom, #cc0026, #cc0026, #cc0026, #cc0026, #cc0026, #d82645, #e13f62, #e6567e, #e986b5, #e8b2dd, #ebdbf5, #ffffff);;
   --modo-noche: rgb(0, 2, 20);
-  --gris: rgb(211, 211, 211);
+  --gris: rgb(230, 230, 230);
 
-  --sombra1: -2px 3px 4px 0px rgba(0, 0, 0, 0.301);
-  --sombra2: -2px 3px 4px 0px rgba(0, 0, 0, 0.301);
+  --sombra1:  0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --sombraNav: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --sombra-solida: 0px 2px 0px 0px #dadada85;
   --fondo-footer: rgba(153, 153, 153, 0.76);
 
@@ -26,21 +28,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: monospace;
+ 
   text-decoration: none;
 }
 
 body {
   width: 100%;
-  height: 100%;
-  background-color:var(--gris);
-  /* background-image: var(--gradi);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; /* Fija el fondo */
-  /* background-position: center; */
+  
+  height: 100vh;
 }
-
 &::-webkit-scrollbar {
   width: 10px;
 }
@@ -54,13 +50,6 @@ body {
   background-color: var(--primario);
   border-radius: 180px;
 }
-/* estilo para contenedores de botones */
-.box-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: .5rem;
-}
 .tituloPagina{
   text-align: center;
   font-size: 1.5rem;
@@ -72,9 +61,7 @@ body {
   gap: .5rem;
   justify-content: space-between;
 }
-.myLink{
-  
-}
+
 .resaltar{
   font-weight: 600;
 }
@@ -84,18 +71,20 @@ body {
   border-radius: 10px;
   cursor: pointer;
 }
-.button-clr-rojo {
-  background-color: red;
+.control{
+  margin: 1rem;
 }
-.button-clr-azul {
-  background-color: blue;
+.control label{
+  font-size: 1rem;
 }
-.button-clr-verde{
-  background-color: #39a900;
+.control input{
+  width: 100%;
+  background-color: var(--gris);
+  outline:none;
+  border-radius: 10px;
+  text-indent: 10px;
+  padding: .3rem;
 }
-.button-clr-morado{
-  background-color: blueviolet;
-}
-a:hover{
-  color: rgb(255, 255, 255);
+.control input:focus{
+  box-shadow: 0 0 10px  var(--primario); 
 }

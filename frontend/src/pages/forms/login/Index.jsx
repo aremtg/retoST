@@ -1,36 +1,36 @@
+import { Link } from 'react-router-dom'
 import Box from '../../../components/miniComponents/Box'
-import ButtonLink from '../../../components/miniComponents/ButtonLink'
 import estilos from './login.module.css'
 function Login() {
   return (
-    <Box>
-        <form action="">
-            <h1>login</h1>
-            <div className={estilos.control}>User name
+    <Box> 
+        <form action="" className={estilos.form}>
+            <h1>Login</h1>
+            <div className={`${estilos.control} control`}>Nombre de usuario:
                 <label htmlFor="">
                     <input type="text" />
                 </label>
             </div>
-            <div className={estilos.control}>Password
+            <div className={`${estilos.control} control`}>Contraseña:
                 <label htmlFor="">
                     <input type="password"/>
                 </label>
             </div>
 
             <div className={estilos.divBtnForm}>
-                <ButtonLink
-                    to='/login'
-                    texto='Login'
-                    className='my_button'
-                />
-                <ButtonLink
-                    to='/register'
-                    texto='Ya tengo cuenta'
-                    className='myLink'
-                />   
+                <button className={`shadow-md my_button`}>
+                    Ingresar
+                </button>
+            </div>
+            <div className='flex items-center justify-center'>
+                <Link to='/register' className={`${estilos.myLink}`}>
+                    No tengo cuenta, "Registrarme".
+                </Link> 
             </div>
             
+           
         </form>
+       
     </Box>
 )
 }
