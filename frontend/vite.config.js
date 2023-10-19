@@ -8,6 +8,6 @@ export default defineConfig({
     proxy: {
       '/api': 'http://localhost:3000', // Cambia esto para que coincida con el puerto en el que está ejecutando tu servidor backend
     },
-    port: 80,
+    port: 8000,
   },
 });
