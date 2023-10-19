@@ -16,13 +16,14 @@ const Nav = () =>{
         <Logo className={estilos.logo}  />
         <nav className={estilos.nav}>
           <ul className={`${estilos.navList} flex gap-2`}>
-            <li ><Link to="/" className={`${estilos.linkItem} text-center	rounded-full shadow-md`}>Home</Link></li>
-            <li ><Link to="/profile" className={`${estilos.linkItem} text-center rounded-full shadow-md`}>Profile</Link></li>
+            <li ><Link to="/" className={`${estilos.linkItem} text-center	rounded-full shadow-md`}>Inicio</Link></li>
+            <li ><Link to="/profile" className={`${estilos.linkItem} text-center rounded-full shadow-md`}>Perfil</Link></li>
+            <li ><Link to="/profile" className={`${estilos.linkItem} text-center rounded-full shadow-md`}>Perfil</Link></li>
           </ul>
         </nav>
         <Link to="/login" className={estilos.link}>
           <UserProfile
-            className={estilos.boxUserNav}
+            className={`${estilos.boxUserNav} boxUserNav`}
             useruser="Ingresar" 
             profileImage="src/img/user_icon.jpg"
           />

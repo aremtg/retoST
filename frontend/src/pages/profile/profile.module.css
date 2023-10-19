@@ -1,8 +1,7 @@
 
 .boxUser{
-    background-color: white;
     box-shadow: var(--sombra1);
-    border-radius: 15px;
+    border-radius: var(--radiusPrimario);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,7 +12,7 @@
     border-radius: 100%;
 }
 .boxUser span{
-    border-radius: 10px;
+    border-radius: var(--radiusPrimario);
     font-weight: 700;
     transform: translateY(-5px);
 }

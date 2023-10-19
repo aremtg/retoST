@@ -12,10 +12,10 @@
 
 .boxUser span {
     background-color: var(--primario);
-    border-radius: 100px;
+    border-radius: var(--radiusPrimario);
     padding:5px;
     font-size: 13px;
     font-weight: bold;
-    color:rgb(255, 255, 255);
+    color: var(--letraBotones);
     position: relative;
 }

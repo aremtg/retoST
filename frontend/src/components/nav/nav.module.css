@@ -1,28 +1,40 @@
 .contNav {
   width: 100%;
-  background-color: #ffffff;
+  background-color: var(--secundario);
   margin: auto;
-  padding: .3rem 1rem;
+  padding: 1rem 1rem;
   justify-content: space-between;
   transition: all .5s;
 }
+.nav{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .navList {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   list-style: none;
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-image: radial-gradient(circle at center center, #441AEC, #e5e5f7), repeating-radial-gradient(circle at center center, #441AEC, #441AEC, 20px, transparent 40px, transparent 20px);
+  background-blend-mode: multiply;
+  padding: .5rem;
+
+  border-radius: var(--radiusPrimario);
 }
 
 .linkItem {
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 1rem;
-  cursor: pointer;
-  padding: 8px;
-  background-color: var(--primario);
-  transition: background-color 0.3s;
-}
-.linkItem:hover {
-  background-color: #ffffff;
-  color:var(--primario);
-
+  background-color: var(--blanco);
+    border-radius: var(--radiusPrimario);
+    padding:5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--primario);
 }
 .boxUserNav span{
   margin-left: -5px;
@@ -34,10 +46,10 @@
   display: block;
   width: 25px;
   height: 3px;
-  border-radius: 100px;
+  border-radius: 100%;
   margin: 6px auto;
-  transition: 0.4s;
-  background-color: #000000;
+  transition: all .5s;
+  background-color: #ffffff;
 }
 /* para que se transforme en X*/
 .open .bar1 {
@@ -54,20 +66,45 @@
     display: flex;
     flex-direction: column;
   }
-  .btnMenu{
-    display: block;
-    position: absolute;
-    top: 13px;
-    right:20px;
-  }
   .contNav{
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
+    transition: all .5s;
   }
-  nav{
+  .nav{
     display: none;
   }
-  .boxUserNav{
+  .contNav.active{
+    flex-direction: column;
+    transition: all .5s;
+  }
+  .contNav.active .nav{
+    display: block;
+    transition: all .5s;
+    width: 100%;
+  }
+  .contNav.active .nav .navList{
+    flex-direction: column;
+    transition: all .5s;
+    width: 100%;
+  }
+  .contNav.active .nav .navList li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contNav.active .nav .navList li .linkItem{
+    width: 70%;
+  }
+  .btnMenu{
+    display: block;
+  }
+  .contNav.active .btnMenu{
+    position: absolute;
+    right: 15px;
+  }
+.boxUserNav img{
     display: none;
   }
   }

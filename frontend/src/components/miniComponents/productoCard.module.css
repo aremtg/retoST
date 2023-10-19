@@ -1,12 +1,14 @@
 
 .productoCard {
     width: 200px;
-    border: 1px solid #ccc;
-    padding: 10px;
+   background-color: rgba(255, 255, 255, 0.094);
+   border-radius: var(--radiusPrimario);
+    padding: 20px;
   }
   
   .productoCard img {
     max-width: 100%;
+    border-radius: var(--radiusPrimario);
   }
   
   .productoCard h1 {
@@ -15,12 +17,12 @@
   
   .productoCard p {
     font-size: 1.2em;
-    color: green;
+    color: rgb(255, 255, 255);
   }
   
   .botonAgregar {
-    background-color: #007bff;
-    color: #fff;
+    background-color: rgb(47, 47, 255);
+    color: var(--letraBotones);
     border: none;
     padding: 10px 20px;
     font-size: 1em;

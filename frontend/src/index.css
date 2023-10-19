@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 /* -------------------------- */
 :root {
-  --primario:  #a541f8;
-  --secundario: #011440;
+  --primario:  #441AEC;
+  --secundario: #101C44;
   --terciario: #E9E9F7;
   --verde: #40ff00;
+  --fondo: #0B1337;
+
+  --letraBotones: white;
+  --radiusPrimario: 1.5rem;
 
   --blanco: rgb(255, 255, 255);
   --gradi-violeta: linear-gradient(to bottom, #ffffff, #d4c9f4, #af93e5, #8f5ad0, #7209b7);
@@ -19,22 +24,19 @@
   --sombraNav: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --sombra-solida: 0px 2px 0px 0px #dadada85;
   --fondo-footer: rgba(153, 153, 153, 0.76);
-
-  --textoGrande: 3rem;
-  --textoNormal:1rem: 
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- 
   text-decoration: none;
 }
 
 body {
   width: 100%;
-  
+  background-color: var(--fondo);
+  font-family: 'Poppins', sans-serif;
   height: 100vh;
 }
 &::-webkit-scrollbar {
@@ -61,14 +63,13 @@ body {
   gap: .5rem;
   justify-content: space-between;
 }
-
 .resaltar{
   font-weight: 600;
 }
 .my_button {
   border: none;
   padding: 5px 10px;
-  border-radius: 10px;
+  border-radius: var(--radiusPrimario);
   cursor: pointer;
 }
 .control{
@@ -81,7 +82,7 @@ body {
   width: 100%;
   background-color: var(--gris);
   outline:none;
-  border-radius: 10px;
+  border-radius: var(--radiusPrimario);
   text-indent: 10px;
   padding: .3rem;
 }

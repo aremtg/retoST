@@ -12,7 +12,7 @@ const Profile = () => {
           <UserProfile 
               useruser={user}
               profileImage="src/img/user_icon.jpg"
-              
+              className={estilos.boxUser}
           />
           <InfoCuenta
               useruser={user}

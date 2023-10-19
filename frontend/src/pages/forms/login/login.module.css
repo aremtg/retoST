@@ -2,7 +2,7 @@
     width: auto;
     background-color:rgb(255, 255, 255);
     box-shadow: var(--sombra1);
-    border-radius: 30px;
+    border-radius: var(--radiusPrimario);
     padding: .5rem;
 }
 .form h1{
@@ -16,7 +16,7 @@
 .divBtnForm button{
     background-color: var(--primario);
     color:white;
-    border-radius: 100px;
+    border-radius: var(--radiusPrimario);
 }
 .myLink{
     width: 100%;

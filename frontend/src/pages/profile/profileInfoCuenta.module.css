@@ -1,11 +1,11 @@
 .boxInfoCuenta{
     background-color: white;
     box-shadow: var(--sombra1);
-    border-radius: 15px;
+    border-radius: var(--radiusPrimario);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: .5rem;  
+    padding: 1.5rem;  
 }
 .boxInfoCuenta span{
     font-size: 1.3rem;

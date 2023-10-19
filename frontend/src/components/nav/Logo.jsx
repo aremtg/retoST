@@ -3,7 +3,8 @@ import estilos from './logo.module.css'
 const Logo = ({className}) => {
   return (
     <Link  to="/" >
-      <img src="src/img/logo1.png"  className={`${className} ${estilos.logo}`} alt="logoST" />
+      <h1 className={estilos.logoh1}>TecnoShope</h1>
+      {/* <img src="src/img/logo1.png"  className={`${className} ${estilos.logo}`} alt="logoST" /> */}
     </Link> 
   )
 }
