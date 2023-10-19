@@ -2,7 +2,7 @@
   width: 100%;
   background-color: var(--secundario);
   margin: auto;
-  padding: 1rem 1rem;
+  padding: 1rem;
   justify-content: space-between;
   transition: all .5s;
 }
@@ -11,6 +11,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.buscador input{
+  border-radius: var(--radiusPrimario);
+  text-indent: 10px;
+  font-weight: 600;
+  transform: skew(-10deg);
+  border: 1px solid #ccc;
+  outline: none;
 }
 .navList {
   width: 100%;
@@ -36,6 +44,7 @@
     font-weight: bold;
     color: var(--primario);
 }
+/* SOLAMENTE EN EL NAV TENDRA UN MARGIN LEFT DE: */
 .boxUserNav span{
   margin-left: -5px;
 }
@@ -104,7 +113,7 @@
     position: absolute;
     right: 15px;
   }
-.boxUserNav img{
+.boxUserNav .contImg img{
     display: none;
   }
   }

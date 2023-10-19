@@ -1,29 +1,25 @@
 import { Link } from 'react-router-dom'
 import Box from '../../../components/miniComponents/Box'
-import estilos from './register.module.css'
+import estilos from '../forms.module.css'
 function Register() {
   return (
-    <Box>
+    <div className="contForms">
         <form action="" className={estilos.form}>
             <>
                 <h1>Registrate</h1>
             </>
             
-            <div className={`${estilos.control} control`}>User name
+            <div className={`${estilos.control} control`}>Nombre de usuario
+                <label htmlFor="">
+                    <input type="text" placeholder=''/>
+                </label>
+            </div>
+            <div className={`${estilos.control} control`}>Correo
                 <label htmlFor="">
                     <input type="text" />
                 </label>
             </div>
-            <div className={`${estilos.control} control`}>Name
-                <label htmlFor="">
-                    <input type="text" />
-                </label>
-            </div><div className={`${estilos.control} control`}>Email
-                <label htmlFor="">
-                    <input type="text" />
-                </label>
-            </div>
-            <div className={`${estilos.control} control`}>Password
+            <div className={`${estilos.control} control`}>Contraseña
                 <label htmlFor="">
                     <input type="password"/>
                 </label>
@@ -40,7 +36,7 @@ function Register() {
                 </Link> 
             </div>
         </form>
-    </Box>
+    </div>
   )
 }
 

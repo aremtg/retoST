@@ -1,3 +1,14 @@
+.contForms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 1rem;
+    border-radius: var(--radiusPrimario);
+    background-color: var(--fondoTrasparente)
+}
+
 .form{
     width: auto;
     background-color:rgb(255, 255, 255);
@@ -15,7 +26,7 @@
 }
 .divBtnForm button{
     background-color: var(--primario);
-    color:white;
+    color:var(--letraBotones);
     border-radius: var(--radiusPrimario);
 }
 .myLink{

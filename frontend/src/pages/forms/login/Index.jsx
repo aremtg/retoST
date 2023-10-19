@@ -1,9 +1,8 @@
 import { Link } from 'react-router-dom'
-import Box from '../../../components/miniComponents/Box'
-import estilos from './login.module.css'
+import estilos from '../forms.module.css'
 function Login() {
   return (
-    <Box> 
+  <div className="contForms">
         <form action="" className={estilos.form}>
             <h1>Login</h1>
             <div className={`${estilos.control} control`}>Nombre de usuario:
@@ -27,11 +26,8 @@ function Login() {
                     No tengo cuenta, "Registrarme".
                 </Link> 
             </div>
-            
-           
         </form>
-       
-    </Box>
+    </div>
 )
 }
 

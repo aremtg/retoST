@@ -6,13 +6,12 @@
   background-image: radial-gradient(circle at center center, #441AEC, #e5e5f7), repeating-radial-gradient(circle at center center, #441AEC, #441AEC, 20px, transparent 40px, transparent 20px);
   background-blend-mode: multiply;
 
-  
   border-radius: var(--radiusPrimario);
   justify-content: center;
   align-items: center;
   width: 90%;
   margin: auto;
-  padding: 1.5rem;
+  padding: 1rem;
 }
 .hero h1{
   color: var(--blanco);
@@ -36,7 +35,7 @@ animation: floatAnimation 3s infinite ease-in-out;
   margin: auto;
   padding: 1rem;
   border-radius: var(--radiusPrimario);
-  background-color: rgba(255, 255, 255, 0.094);
+  background-color: var(--fondoTrasparente);
 }
 .categorias ul{
  list-style: none;

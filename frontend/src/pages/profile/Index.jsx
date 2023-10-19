@@ -7,12 +7,13 @@ import estilos from './profile.module.css'
 const Profile = () => {
   const user = 'Pepe_123'
     return (
-      <div>
-        <Box>
+      <>
+        <div className="contCentrado">
           <UserProfile 
               useruser={user}
-              profileImage="src/img/user_icon.jpg"
-              className={estilos.boxUser}
+              srcProfileImage="src/img/user_icon.jpg"
+              classNameBoxUser={estilos.boxUser}
+              classNameContImg={estilos.contImg}
           />
           <InfoCuenta
               useruser={user}
@@ -20,13 +21,13 @@ const Profile = () => {
               lastname="Guzman"
               usercorreo="pepe@gmail.com" 
           />
-        </Box>
+        </div>
         <br />
         <Box>
             <h1>Un titulo para algo</h1>
 
         </Box>        
-      </div>
+      </>
     );
   }
   

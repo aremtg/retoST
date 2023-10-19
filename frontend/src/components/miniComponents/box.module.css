@@ -5,4 +5,7 @@
     border-radius: var(--radiusPrimario);
     display: flex;
     flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
