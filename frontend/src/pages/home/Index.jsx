@@ -3,7 +3,7 @@ import estilos from './home.module.css'
 import axios from "axios";
 import Box from "../../components/miniComponents/Box";
 import ProductoCard from "../../components/miniComponents/ProductoCard";
-import Logo from "../../components/nav/Logo";
+import CategoriaSlider from "../../components/miniComponents/CategoriaSlider";
 
 const Home = () => {
   const [products, setProducts] = useState([]);
@@ -16,36 +16,29 @@ const Home = () => {
   }, []);
 
   return (
-    <>
-    <div className={`${estilos.hero}`}>
-      <h1 className="text-center">
-        Bienvenido, <strong>Usuario</strong>
-      </h1>
-     
-      <img src="src/img/nuevo.png" alt="" className={`${estilos.imgFlotante}`}/>
-    </div>
+    <Box>
+      <div className={`${estilos.hero} shadow-md`}>
+        <h1 className="text-center">
+          Bienvenido, <strong>Usuario</strong>
+        </h1>
+
+        <img
+          src="src/img/nuevo.png"
+          alt=""
+          className={`${estilos.imgFlotante}`}
+        />
+      </div>
       <br />
-    <div className={`${estilos.categorias} shadow-md`}>
-      <ul>
-        <li>Portatiles</li>
-        <li>Accesorios</li>
-        <li>Ca3</li>
-        <li>Ca3</li>
-      </ul>
-    </div>
-      <Box>
-      
-        <div className="contedorFlex">
+      <h1 className="text-center">Categorias</h1>
+      <CategoriaSlider />
+      <br />
+        <div className={`${estilos.contenedorProducts} container mx-auto grid gap-x-8 gap-y-4 grid-cols-4`}>
           {products.map((product) => (
-            <ProductoCard
-              key={product.id}
-              producto={product}
-            />
+            <ProductoCard key={product.id} producto={product} />
           ))}
         </div>
-            <div>aqui habran productos</div>
-      </Box>
-    </>
+    </Box>
+      
   );
 };
 

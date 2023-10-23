@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom'
 import estilos from '../forms.module.css'
+import Box from '../../../components/miniComponents/Box'
 function Login() {
   return (
-  <div className="contForms">
+   <Box>
         <form action="" className={estilos.form}>
             <h1>Login</h1>
             <div className={`${estilos.control} control`}>Nombre de usuario:
@@ -27,7 +28,7 @@ function Login() {
                 </Link> 
             </div>
         </form>
-    </div>
+   </Box>
 )
 }
 

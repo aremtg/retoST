@@ -17,11 +17,11 @@ const Nav = () =>{
         <nav className={estilos.nav}>
           <ul className={`${estilos.navList} flex gap-2`}>
             <div className={`${estilos.buscador}`}>
-              <input type="search" name="" id="" />
+              <input type="search" name="" id="" placeholder='Buscar...' />
             </div>
-            {/* <li ><Link to="/" className={`${estilos.linkItem} text-center	rounded-full shadow-md`}>Inicio</Link></li>
+            <li ><Link to="/" className={`${estilos.linkItem} text-center	rounded-full shadow-md`}>Inicio</Link></li>
             <li ><Link to="/profile" className={`${estilos.linkItem} text-center rounded-full shadow-md`}>Perfil</Link></li>
-            <li ><Link to="/profile" className={`${estilos.linkItem} text-center rounded-full shadow-md`}>Perfil</Link></li> */}
+            <li ><Link to="/profile" className={`${estilos.linkItem} text-center rounded-full shadow-md`}>Perfil</Link></li>
           </ul>
         </nav>
         <Link to="/login" className={estilos.link}>

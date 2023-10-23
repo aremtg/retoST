@@ -1,16 +1,6 @@
-.contForms{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    margin: auto;
-    padding: 1rem;
-    border-radius: var(--radiusPrimario);
-    background-color: var(--fondoTrasparente)
-}
-
 .form{
-    width: auto;
+    width:45%;
+    margin: auto;
     background-color:rgb(255, 255, 255);
     box-shadow: var(--sombra1);
     border-radius: var(--radiusPrimario);
@@ -36,4 +26,12 @@
 }
 .myLink:hover{
     color: var(--primario);
+}
+@media screen and (max-width: 700px) {
+    .form{
+        width: 80%;
+    }
+
+
+
 }

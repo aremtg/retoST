@@ -5,10 +5,10 @@
 /* -------------------------- */
 :root {
   --primario:  #441AEC;
-  --secundario: #101C44;
+  --nav: #ffffff;
   --terciario: #E9E9F7;
+
   --verde: #40ff00;
-  --fondo: #0B1337;
   --fondoTrasparente:rgba(255, 255, 255, 0.094);
   --letraBotones: white;
   --radiusPrimario: 1.5rem;
@@ -35,7 +35,7 @@
 
 body {
   width: 100%;
-  background-color: var(--fondo);
+  background-color: var(--terciario);
   font-family: 'Poppins', sans-serif;
   height: 100vh;
 }
@@ -56,12 +56,6 @@ body {
   text-align: center;
   font-size: 1.5rem;
   color: white;
-}
-.contedorFlex{
-  display: flex;
-  flex-wrap: wrap;
-  gap: .5rem;
-  justify-content: space-between;
 }
 .resaltar{
   font-weight: 600;
@@ -88,20 +82,4 @@ body {
 }
 .control input:focus{
   box-shadow: 0 0 10px  var(--primario); 
-}
-/* contenedores  */
-.contCentrado{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  margin: auto;
-  padding: 1rem;
-  border-radius: var(--radiusPrimario);
-  background-color: var(--fondoTrasparente);
-}
-.contProducts{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }

@@ -1,6 +1,7 @@
 .contNav {
-  width: 100%;
-  background-color: var(--secundario);
+  width: 98%;
+  background-color: var(--nav);
+  border-radius: 1rem;
   margin: auto;
   padding: 1rem;
   justify-content: space-between;
@@ -12,25 +13,31 @@
   justify-content: center;
   align-items: center;
 }
-.buscador input{
-  border-radius: var(--radiusPrimario);
-  text-indent: 10px;
-  font-weight: 600;
-  transform: skew(-10deg);
+.buscador input {
+  padding: 5px;
+  text-indent: 5px;
   border: 1px solid #ccc;
+  border-radius: var(--radiusPrimario);
+  width: 320px;
+  font-size: 16px;
   outline: none;
 }
+
+.buscador input::placeholder {
+  color: #999; 
+}
+
+.buscador input:focus {
+  border-color:var(--primario); 
+}
+
 .navList {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-
   list-style: none;
   background-color: #e5e5f7;
-  opacity: 0.8;
-  background-image: radial-gradient(circle at center center, #441AEC, #e5e5f7), repeating-radial-gradient(circle at center center, #441AEC, #441AEC, 20px, transparent 40px, transparent 20px);
-  background-blend-mode: multiply;
   padding: .5rem;
 
   border-radius: var(--radiusPrimario);
@@ -58,7 +65,7 @@
   border-radius: 100%;
   margin: 6px auto;
   transition: all .5s;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 /* para que se transforme en X*/
 .open .bar1 {

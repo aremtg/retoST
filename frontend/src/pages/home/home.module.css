@@ -1,20 +1,13 @@
 .hero {
   display: flex;
-  /* background-color: rgba(255, 255, 255, 0.096); */
-  background-color: #e5e5f7;
-  opacity: 0.8;
-  background-image: radial-gradient(circle at center center, #441AEC, #e5e5f7), repeating-radial-gradient(circle at center center, #441AEC, #441AEC, 20px, transparent 40px, transparent 20px);
-  background-blend-mode: multiply;
-
+  background-color: var(--blanco);
   border-radius: var(--radiusPrimario);
   justify-content: center;
   align-items: center;
-  width: 90%;
-  margin: auto;
   padding: 1rem;
 }
 .hero h1{
-  color: var(--blanco);
+  color: black;
   font-size: 20px;
 }
 @keyframes floatAnimation {
@@ -30,29 +23,7 @@
 width: 400px;
 animation: floatAnimation 3s infinite ease-in-out;
 }
-.categorias{
-  width: 90%;
-  margin: auto;
-  padding: 1rem;
-  border-radius: var(--radiusPrimario);
-  background-color: var(--fondoTrasparente);
-}
-.categorias ul{
- list-style: none;
- display: flex;
- justify-content: center;
- gap: 1rem;
-}
-.categorias ul li{
-  width: 100%;
-  padding: .5rem;
-  border-radius: var(--radiusPrimario);
-  background-color: white;
-  color: var(--primario);
-  font-weight: 700;
-  text-align: center;
-  cursor: pointer;
-}
+
 @media screen and (max-width: 700px) {
   .hero{
    display: flex;
@@ -62,4 +33,9 @@ animation: floatAnimation 3s infinite ease-in-out;
   .imgFlotante {
     width: 50%;
   }
+}
+.contenedorProducts{
+  background-color: var(--blanco);
+  border-radius: var(--radiusPrimario);
+  padding: 1rem;
 }
