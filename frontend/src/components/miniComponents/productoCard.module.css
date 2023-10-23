@@ -1,7 +1,7 @@
 
 .productoCard {
   width: 200px;
-  background-color: var(--terciario);
+  background-color: var(--secundario);
   border-radius: var(--radiusPrimario);
   padding: 20px;
 }

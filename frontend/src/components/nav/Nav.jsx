@@ -21,7 +21,7 @@ const Nav = () =>{
             </div>
             <li ><Link to="/" className={`${estilos.linkItem} text-center	rounded-full shadow-md`}>Inicio</Link></li>
             <li ><Link to="/profile" className={`${estilos.linkItem} text-center rounded-full shadow-md`}>Perfil</Link></li>
-            <li ><Link to="/profile" className={`${estilos.linkItem} text-center rounded-full shadow-md`}>Perfil</Link></li>
+            <li ><Link to="/carrito" className={`${estilos.linkItem} text-center rounded-full shadow-md`}></Link></li>
           </ul>
         </nav>
         <Link to="/login" className={estilos.link}>
@@ -38,7 +38,9 @@ const Nav = () =>{
           <span className={estilos.bar3}></span>
         </button>
       </div>
-      
+      <span className="inline-flex items-center justify-center p-2 bg-indigo-500 rounded-md shadow-lg">
+      <svg className="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><!-- ... --></svg>
+    </span>
       <br />
     </>
   )

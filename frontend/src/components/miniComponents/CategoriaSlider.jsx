@@ -35,10 +35,13 @@ const CategoriaSlider = () => {
       <Slider {...settings}>
         {categorias.map((categoria, index) => (
           <div key={index} className={estilos.categoriaSlider}>
+
             <img src={categoria.imagen} alt={categoria.titulo} />
             <h2>{categoria.titulo}</h2>
             <p>{categoria.descripcion}</p>
+            
             <button className='my_button'>Ver categoria</button>
+
           </div>
         ))}
       </Slider>
