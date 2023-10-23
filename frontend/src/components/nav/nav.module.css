@@ -18,7 +18,7 @@
   text-indent: 5px;
   border: 1px solid #ccc;
   border-radius: var(--radiusPrimario);
-  width: 320px;
+  width:auto;
   font-size: 16px;
   outline: none;
 }
@@ -55,6 +55,12 @@
 .boxUserNav span{
   margin-left: -5px;
 }
+.contCarrito{
+  background-color: white;
+  border-radius: var(--radiusPrimario);
+  padding: 5px;
+}
+
 .btnMenu{
   display: none;
 }
@@ -120,7 +126,7 @@
     position: absolute;
     right: 15px;
   }
-  .boxUserNav .contImg img{
+  .contImg {
     display: none;
   }
   }
