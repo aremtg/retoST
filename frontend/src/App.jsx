@@ -6,7 +6,8 @@ import Home from './pages/home/Index.jsx'
 import Profile from './pages/profile/Index.jsx'
 import Register from './pages/forms/register/Index';
 import Login from './pages/forms/login/Index';
-
+import Cart from './pages/cart/Cart.jsx';
+import Footer from './components/miniComponents/Footer';
 function App() {
   return (
     <>
@@ -17,9 +18,12 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register/>} />
+          <Route path="/cart" element={<Cart/>} />
         </Routes>
       </BrowserRouter>
-      
+      <Footer>
+        
+      </Footer>
     </>
     
   )

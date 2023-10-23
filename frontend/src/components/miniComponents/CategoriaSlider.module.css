@@ -11,6 +11,7 @@
   .categoriaSlider img {
     max-width: 100%;
     height: auto;
+    margin: auto; 
     margin-bottom: 10px;
   }
   

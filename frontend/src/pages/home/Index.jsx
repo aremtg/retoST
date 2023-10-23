@@ -17,25 +17,20 @@ const Home = () => {
 
   return (
     <Box>
-      <div className={`${estilos.hero} shadow-md`}>
-        <h1 className="text-center">
-          Bienvenido, <strong>Usuario</strong>
-        </h1>
-
+      {/* <div className={`${estilos.hero} shadow-md`}>
         <img
           src="src/img/nuevo.png"
           alt=""
           className={`${estilos.imgFlotante}`}
         />
-      </div>
-      <br />
-      <h1 className="text-center">Categorias</h1>
+      </div> */}
       <CategoriaSlider />
       <br />
+      <br />
         <div className={`${estilos.contenedorProducts} container mx-auto grid gap-x-8 gap-y-4 grid-cols-4`}>
-          {products.map((product) => (
+          {/* {products.map((product) => (
             <ProductoCard key={product.id} producto={product} />
-          ))}
+          ))} */}
         </div>
     </Box>
       

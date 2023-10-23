@@ -20,6 +20,16 @@ const CategoriaSlider = () => {
       titulo: 'Accesorios',
       descripcion: 'Breve descripcion, categ... 3',
     },
+    {
+      imagen: 'src/img/accesorio.png',
+      titulo: 'Monitores',
+      descripcion: 'Breve descripcion, categ... 3',
+    },
+    {
+      imagen: 'src/img/accesorio.png',
+      titulo: 'Escritorio',
+      descripcion: 'Breve descripcion, categ... 3',
+    },
   ];
 
   const settings = {
