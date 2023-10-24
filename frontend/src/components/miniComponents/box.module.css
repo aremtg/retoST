@@ -1,3 +1,4 @@
-.caja { 
+.caja {
+    flex-grow: 1;
     border-radius: var(--radiusPrimario);
 }

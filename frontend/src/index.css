@@ -6,7 +6,7 @@
 :root {
   --primario:  #441AEC;
   --secundario: #E9E9F7;
-  --nav: #ffffff;
+  --navAndFooter: #ffffff;
 
 
   --verde: #40ff00;
@@ -34,7 +34,7 @@ body {
   width: 100%;
   background-color: var(--secundario);
   font-family: 'Poppins', sans-serif;
-  height: 100vh;
+  min-height: 100vh;
 }
 &::-webkit-scrollbar {
   width: 10px;
