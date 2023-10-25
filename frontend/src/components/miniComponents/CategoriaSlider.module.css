@@ -9,7 +9,7 @@
   }
   
   .categoriaSlider img {
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
     margin: auto; 
     margin-bottom: 10px;
@@ -33,4 +33,24 @@
     padding: 10px 20px;
     font-size: 1em;
     cursor: pointer;
-  }  
+  } 
+  @media screen and (max-width: 700px) {
+    .categoriaSlider h2 {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+    .categoriaSlider p {
+      font-size: .7rem;
+
+    }
+    .categoriaSlider button {
+      font-size: .6em;
+      padding: 5px 10px;
+    }
+    .categoriaSlider img {
+      max-width: 100%;
+      height: auto;
+      margin: auto; 
+      margin-bottom: 10px;
+    }
+  }

@@ -1,16 +1,27 @@
-
+import React from 'react';
 import estilos from './footer.module.css'
+import Logo from '../nav/Logo';
+
 const  Footer =() =>{
   return (
-    <div className={`${estilos.footer}`}>
-      <ul>
-        <img src="src/img/facebook.svg" alt="" />
-        <img src="src/img/github.svg" alt="" />
-        <img src="src/img/whatsapp.svg" alt="" />
-        <img src="src/img/instagram.svg" alt="" />
-      </ul>
-    </div>
-  )
+      <div className={`${estilos.footer}`}>
+        <ul>
+          <span>&copy;<Logo /></span>
+          <a href="">
+            <img src="src/img/facebook.svg" alt="" />
+          </a>
+          <a href="">
+            <img src="src/img/github.svg" alt="" />
+          </a>
+          <a href="">
+            <img src="src/img/instagram.svg" alt="" />
+          </a>
+          <a href="">
+            <img src="src/img/whatsapp.svg" alt="" />
+          </a>
+        </ul>
+      </div>
+  );
 }
 
 export default Footer;

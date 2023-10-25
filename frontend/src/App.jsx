@@ -21,8 +21,9 @@ function App() {
           <Route path="/register" element={<Register/>} />
           <Route path="/cart" element={<Cart/>} />
         </Routes>
+         <Footer/>
       </BrowserRouter>
-      <Footer/>
+     
     </>
     
   )
