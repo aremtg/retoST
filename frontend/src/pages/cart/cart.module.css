@@ -1,0 +1,22 @@
+
+.listProductos{
+    flex: 1;
+    background-color: var(--blanco);
+    border-radius: var(--radiusPrimario);
+    padding: 1rem;
+}
+.botonAñadir{
+    background-color: rgb(255, 96, 96);
+    color: white;
+}
+.botonComprar{
+    background-color: var(--primario);
+    color: white;
+}
+.pagos{
+    
+    background-color: var(--blanco);
+    background-color: var(--blanco);
+    border-radius: var(--radiusPrimario);
+    padding: 1rem;
+}
