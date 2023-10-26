@@ -1,7 +1,5 @@
 import { useState } from 'react'
 import './App.css'
-import { Datepicker, Input, initTE } from "tw-elements";
-initTE({ Datepicker, Input }, { allowReinits: true });
 import Nav from './components/nav/Nav'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/home/Index.jsx'
