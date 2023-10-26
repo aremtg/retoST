@@ -35,7 +35,7 @@ const CategoriaSlider = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 400,
     slidesToShow: 2,
     slidesToScroll: 1
   };
@@ -50,7 +50,7 @@ const CategoriaSlider = () => {
             <h2>{categoria.titulo}</h2>
             <p>{categoria.descripcion}</p>
             
-            <button className='my_button'>Ver categoria</button>
+            <button className='my_button'>Ver mas...</button>
 
           </div>
         ))}

@@ -1,0 +1,37 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    width: 100%;
+    padding: .5rem;
+    background-color: var(--navAndFooter);
+    position: static;
+   bottom: 0;
+}
+.footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+.footer ul span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer ul img{
+    width: 1.6rem;
+}
+@media screen and (max-width: 700px) {
+    .footer ul img{
+        width: 1rem;
+    }
+    .footer ul{
+        width: 100px;
+        display: flex;
+       flex-wrap: wrap;
+        gap: .5rem;
+    }
+}

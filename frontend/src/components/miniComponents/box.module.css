@@ -1,3 +1,5 @@
-.caja { 
+.caja {
     border-radius: var(--radiusPrimario);
+    min-height: calc(100vh - 100px);
+    margin-bottom: 1rem;
 }

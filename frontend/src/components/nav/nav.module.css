@@ -1,11 +1,12 @@
 .contNav {
   width: 98%;
-  background-color: var(--nav);
+  background-color: var(--navAndFooter);
   border-radius: 1rem;
   margin: auto;
   padding: 1rem;
   justify-content: space-between;
   transition: all .5s;
+  position: static;
 }
 nav{
   width: 50%;

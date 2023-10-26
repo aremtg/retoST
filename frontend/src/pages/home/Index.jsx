@@ -18,11 +18,12 @@ const Home = () => {
       <CategoriaSlider />
       <br />
       <br />
-        <div className={`${estilos.contenedorProducts} container mx-auto grid gap-x-8 gap-y-4 grid-cols-4`}>
-          {/* {products.map((product) => (
+        <div className={`${estilos.contenedorProducts} `}>
+          {products.map((product) => (
             <ProductoCard key={product.id} producto={product} />
-          ))} */}
+          ))}
         </div>
+        <br />
     </Box>
       
   );

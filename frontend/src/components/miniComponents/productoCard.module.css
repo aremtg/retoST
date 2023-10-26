@@ -21,10 +21,19 @@
 }
 
 .botonAgregar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--primario);
   color: var(--letraBotones);
   border: none;
   padding: 10px 20px;
-  font-size: 1em;
+  font-size: 1rem;
   cursor: pointer;
+}
+@media screen and (max-width: 700px) {
+  .botonAgregar {
+   font-size: .8rem;
+  }
+
 }
