@@ -6,15 +6,6 @@ import ProductoCard from "../../components/miniComponents/ProductoCard";
 import CategoriaSlider from "../../components/miniComponents/CategoriaSlider";
 
 const Home = () => {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    // Realiza una solicitud a tu servidor para obtener la lista de productos
-    axios.get("http://localhost:3000/api/products").then((response) => {
-      setProducts(response.data);
-    });
-  }, []);
-
   return (
     <Box>
       {/* <div className={`${estilos.hero} shadow-md`}>
