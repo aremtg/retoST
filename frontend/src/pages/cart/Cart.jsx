@@ -4,18 +4,18 @@ function Cart() {
   return (
     <Box>
       <h1 className="text-center">Carrito de compras</h1>
-      <div className={`${estilos.contenedorDivs} flex flex-row`}>
-        <div className={`${estilos.listProductos} flex`}>
+      <div className={`${estilos.contenedorDivs} flex flex-row `}>
+        <div className={`${estilos.listProductos} flex shadow-md`}>
           <div className="flex gap-x-2.5 items-center">
             <p>Aun no hay productos</p>
-            <button className={`${estilos.botonAñadir} my_button`}>Añadir</button>
+            <button className={`${estilos.botonAñadir} my_button shadow-md`}>Añadir</button>
           </div>
         </div>
-        <div className={`${estilos.pagos} flex flex-col`}>
+        <div className={`${estilos.pagos} flex flex-col shadow-md`}>
           <div className={`${estilos.total}  flex flex-col`}>
             <h1>Resumen del pedido</h1>
             <span>$000</span>
-            <button className={`${estilos.botonComprar} my_button`}>Comprar</button>
+            <button className={`${estilos.botonComprar} my_button shadow-md`}>Comprar</button>
           </div>
           <br />
           <br />

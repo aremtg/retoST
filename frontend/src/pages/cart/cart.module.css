@@ -1,4 +1,6 @@
-
+.contenedorDivs{
+    gap: .5rem;
+}
 .listProductos{
     flex: 1;
     background-color: var(--blanco);
@@ -6,7 +8,7 @@
     padding: 1rem;
 }
 .botonAñadir{
-    background-color: rgb(255, 96, 96);
+    background-color: rgb(111, 255, 0);
     color: white;
 }
 .botonComprar{
@@ -14,8 +16,6 @@
     color: white;
 }
 .pagos{
-    
-    background-color: var(--blanco);
     background-color: var(--blanco);
     border-radius: var(--radiusPrimario);
     padding: 1rem;

@@ -35,7 +35,7 @@ function Login() {
 
   return (
     <Box>
-      <form className={estilos.form}>
+      <form className={`${estilos.form} gap-4`}>
         <h1>Login</h1>
         {error && <div className={estilos.error}>{error}</div>}
         <div className={`${estilos.control} control`}>

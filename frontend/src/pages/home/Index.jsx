@@ -18,11 +18,11 @@ const Home = () => {
       <CategoriaSlider />
       <br />
       <br />
-        <div className={`${estilos.contenedorProducts} `}>
+        {/* <div className={`${estilos.contenedorProducts} `}>
           {products.map((product) => (
             <ProductoCard key={product.id} producto={product} />
           ))}
-        </div>
+        </div> */}
         <br />
     </Box>
       

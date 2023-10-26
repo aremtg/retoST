@@ -9,7 +9,7 @@
   --navAndFooter: #ffffff;
 
 
-  --verde: #40ff00;
+  --verde: #ff3700;
   --fondoTrasparente:rgba(255, 255, 255, 0.094);
   --letraBotones: white;
   --radiusPrimario: 1.5rem;
@@ -54,29 +54,9 @@ body {
   font-size: 1.5rem;
   color: white;
 }
-.resaltar{
-  font-weight: 600;
-}
 .my_button {
   border: none;
   padding: 5px 10px;
   border-radius: var(--radiusPrimario);
   cursor: pointer;
-}
-.control{
-  margin: 1rem;
-}
-.control label{
-  font-size: 1rem;
-}
-.control input{
-  width: 100%;
-  background-color: var(--secundario);
-  outline:none;
-  border-radius: var(--radiusPrimario);
-  text-indent: 10px;
-  padding: .3rem;
-}
-.control input:focus{
-  box-shadow: 0 0 10px  var(--primario); 
 }

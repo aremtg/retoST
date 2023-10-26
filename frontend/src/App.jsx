@@ -12,20 +12,20 @@ import Footer from './components/footer/Footer';
 function App() {
   return (
     <>
-      <BrowserRouter> 
-      <Nav/>
+      <BrowserRouter>
+        <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register/>} />
-          <Route path="/cart" element={<Cart/>} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
-         <Footer/>
+        <Footer />
       </BrowserRouter>
-     
+
     </>
-    
+
   )
 }
 
