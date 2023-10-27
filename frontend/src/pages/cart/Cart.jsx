@@ -3,27 +3,24 @@ import estilos from './cart.module.css'
 function Cart() {
   return (
     <Box>
-      <h1 className="text-center">Carrito de compras</h1>
-      <div className={`${estilos.contenedorDivs} flex flex-row `}>
+      <div className={`${estilos.contenedorDivs}`}>
         <div className={`${estilos.listProductos} flex shadow-md`}>
-          <div className="flex gap-x-2.5 items-center">
+          <div className="w-full flex justify-between gap-2 items-center h-10  bg-gray-300 rounded-xl px-2">
             <p>Aun no hay productos</p>
             <button className={`${estilos.botonAñadir} my_button shadow-md`}>Añadir</button>
           </div>
         </div>
         <div className={`${estilos.pagos} flex flex-col shadow-md`}>
           <div className={`${estilos.total}  flex flex-col`}>
-            <h1>Resumen del pedido</h1>
+            <h1 className="text">Resumen del pedido</h1>
             <span>$000</span>
             <button className={`${estilos.botonComprar} my_button shadow-md`}>Comprar</button>
           </div>
           <br />
           <br />
           <div className="relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-            <div className={`${estilos.m
-            }relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600`}>
+            <div className={`${estilos.imgPagos} flex items-center relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-white px-2`}>
             <img src="src/img/paypal.png" alt="" />
-            <img src="src/img/efecty.png" alt="" />
             <img src="src/img/mastercard.png" alt="" />
             <img src="src/img/pse.png" alt="" />
             </div>
@@ -36,9 +33,6 @@ function Cart() {
               </p>
             </div>
             <div className="p-6 pt-0">
-              <button data-ripple-light="true" type="button" className="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
-                Read More
-              </button>
             </div>
           </div>
         </div>

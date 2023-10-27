@@ -41,7 +41,7 @@ const CategoriaSlider = () => {
   };
 
   return (
-    <div className={estilos.categoriaSlider_container}>
+    <div className={`${estilos.categoriaSlider_container} m-auto px-2`}>
       <Slider {...settings}>
         {categorias.map((categoria, index) => (
           <div key={index} className={estilos.categoriaSlider}>

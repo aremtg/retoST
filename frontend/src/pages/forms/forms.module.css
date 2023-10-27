@@ -11,6 +11,9 @@
     text-align: center;
     font-size: 2rem;
 }
+.control{
+    margin: .5rem;
+}
 .control label {
     font-size: 1rem;
 }

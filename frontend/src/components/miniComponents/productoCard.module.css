@@ -21,9 +21,6 @@
 }
 
 .botonAgregar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: var(--primario);
   color: var(--letraBotones);
   border: none;

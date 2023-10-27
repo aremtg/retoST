@@ -1,5 +1,7 @@
 .contenedorDivs{
+    display: flex;
     gap: .5rem;
+    flex-direction: row;
 }
 .listProductos{
     flex: 1;
@@ -19,4 +21,18 @@
     background-color: var(--blanco);
     border-radius: var(--radiusPrimario);
     padding: 1rem;
+}
+.imgPagos img{
+    width: 90px;
+    
+}
+@media screen and (max-width: 700px) {
+    .contenedorDivs{
+
+        flex-direction: column;
+    }
+    .pagos{
+        display: flex;
+        align-items: center;
+    }
 }

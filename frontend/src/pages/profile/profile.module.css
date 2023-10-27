@@ -1,30 +1,12 @@
-.boxUser {
-  display: flex;
-  align-items: center;
-}
-.contImg {
-  width: 150px;
-  height: 150px;
-  overflow: hidden;
-  border-radius: 50%;
-  border: 3px solid var(--primario);
-}
-.boxUser img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
 
-.boxUser span {
-  background-color: var(--primario);
-  border-radius: var(--radiusPrimario);
-  padding: 0.5rem;
-  font-size: 13px;
-  font-weight: bold;
-  color: var(--letraBotones);
-  position: relative;
-}
 .cardContent {
   background-color: var(--fondoTrasparente) !important;
   box-shadow: inherit;
+}
+.classNameContImg{
+  width: 130px;
+  height: 130px;
+}
+.classNameSpan {
+  display: none;
 }

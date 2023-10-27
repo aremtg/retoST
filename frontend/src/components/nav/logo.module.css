@@ -1,8 +1,5 @@
-.logo{
-    width: 100px;
-}
 .logoh1{
     color: var(--primario);
     font-size: 1.7rem;
-    font-weight: 800;
+    font-weight: 900;
 }
