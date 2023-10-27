@@ -18,14 +18,70 @@ const Home = () => {
       <CategoriaSlider />
       <br />
       <br />
-        {/* <div className={`${estilos.contenedorProducts} `}>
-          {products.map((product) => (
-            <ProductoCard key={product.id} producto={product} />
-          ))}
-        </div> */}
-        <br />
-    </Box>
+      <div className={`${estilos.contenedorProducts}`}>
+      <ProductoCard
+        nombreP='producto1'
+        imagenSrc='src/img/p1.png'
+        precio='88'
+      />
+      <ProductoCard
+        nombreP='producto1'
+        imagenSrc='src/img/p2.png'
+        precio='88'
+      />
+      <ProductoCard
+        nombreP='producto1'
+        imagenSrc='src/img/p3.png'
+        precio='88'
+      />
+      <ProductoCard
+        nombreP='producto1'
+        imagenSrc='src/img/p4.png'
+        precio='88'
+      />
+      <ProductoCard
+        nombreP='producto1'
+        imagenSrc='src/img/p5.png'
+        precio='88'
+      />
+      <ProductoCard
+        nombreP='producto1'
+        imagenSrc='src/img/p6.png'
+        precio='88'
+      />
+      <ProductoCard
+        nombreP='producto1'
+        imagenSrc='src/img/nuevo.png'
+        precio='88'
+      />
+       <ProductoCard
+        nombreP='producto1'
+        imagenSrc='src/img/nuevo.png'
+        precio='88'
+      />
+       <ProductoCard
+        nombreP='producto1'
+        imagenSrc='src/img/nuevo.png'
+        precio='88'
+      /> <ProductoCard
+        nombreP='producto1'
+        imagenSrc='src/img/nuevo.png'
+        precio='88'
+      />
+       <ProductoCard
+        nombreP='producto1'
+        imagenSrc='src/img/nuevo.png'
+        precio='88'
+      />
+       <ProductoCard
+        nombreP='producto1'
+        imagenSrc='src/img/nuevo.png'
+        precio='88'
+      />
+      </div>
       
+    </Box>
+
   );
 };
 

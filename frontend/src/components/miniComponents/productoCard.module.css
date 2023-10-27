@@ -1,6 +1,6 @@
 
 .productoCard {
-  width: 200px;
+  width: 250px;
   background-color: var(--secundario);
   border-radius: var(--radiusPrimario);
   padding: 20px;
@@ -16,8 +16,8 @@
 }
 
 .productoCard p {
-  font-size: 1.2em;
-  color: rgb(255, 255, 255);
+  font-size: 1em;
+  color: rgb(0, 0, 0);
 }
 
 .botonAgregar {
