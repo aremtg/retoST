@@ -25,57 +25,57 @@ const Home = () => {
         precio='88'
       />
       <ProductoCard
-        nombreP='producto1'
+        nombreP='producto2'
         imagenSrc='src/img/p2.png'
         precio='88'
       />
       <ProductoCard
-        nombreP='producto1'
+        nombreP='producto3'
         imagenSrc='src/img/p3.png'
         precio='88'
       />
       <ProductoCard
-        nombreP='producto1'
+        nombreP='producto4'
         imagenSrc='src/img/p4.png'
         precio='88'
       />
       <ProductoCard
-        nombreP='producto1'
+        nombreP='producto5'
         imagenSrc='src/img/p5.png'
         precio='88'
       />
       <ProductoCard
-        nombreP='producto1'
+        nombreP='producto6'
         imagenSrc='src/img/p6.png'
         precio='88'
       />
       <ProductoCard
-        nombreP='producto1'
-        imagenSrc='src/img/nuevo.png'
+        nombreP='producto7'
+        imagenSrc='src/img/p7.png'
         precio='88'
       />
        <ProductoCard
-        nombreP='producto1'
-        imagenSrc='src/img/nuevo.png'
+        nombreP='producto8'
+        imagenSrc='src/img/p8.png'
         precio='88'
       />
        <ProductoCard
-        nombreP='producto1'
-        imagenSrc='src/img/nuevo.png'
+        nombreP='producto9'
+        imagenSrc='src/img/p9.png'
         precio='88'
       /> <ProductoCard
-        nombreP='producto1'
-        imagenSrc='src/img/nuevo.png'
+        nombreP='producto10'
+        imagenSrc='src/img/p10.png'
         precio='88'
       />
        <ProductoCard
-        nombreP='producto1'
-        imagenSrc='src/img/nuevo.png'
+        nombreP='producto11'
+        imagenSrc='src/img/p11.png'
         precio='88'
       />
        <ProductoCard
-        nombreP='producto1'
-        imagenSrc='src/img/nuevo.png'
+        nombreP='producto12'
+        imagenSrc='src/img/p12.png'
         precio='88'
       />
       </div>
