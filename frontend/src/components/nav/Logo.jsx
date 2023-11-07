@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import estilos from './logo.module.css'
-const Logo = ({className}) => {
+const Logo = () => {
   return (
     <Link  to="/" >
       <h1 className={estilos.logoh1}>TecnoShope</h1>

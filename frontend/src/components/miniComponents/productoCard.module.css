@@ -3,7 +3,7 @@
   width: 200px;
   min-width: 200px;
   min-height: 200px;
-  background-color: var(--secundario);
+  background-color: rgb(242, 242, 242);
   border-radius: var(--radiusPrimario);
   padding: 20px;
 }

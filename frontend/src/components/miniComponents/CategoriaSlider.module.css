@@ -8,7 +8,7 @@
   }
   
   .categoriaSlider img {
-    max-width: 60%;
+    max-width: 50%;
     height: auto;
     margin: auto; 
     margin-bottom: 10px;
@@ -29,7 +29,7 @@
     background-color:var(--primario);
     color: var(--letraBotones);
     border: none;
-    padding: 10px 20px;
+    padding: 5px 15px;
     font-size: 1em;
     cursor: pointer;
   } 

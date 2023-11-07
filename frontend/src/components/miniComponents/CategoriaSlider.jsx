@@ -36,8 +36,17 @@ const CategoriaSlider = () => {
     dots: true,
     infinite: true,
     speed: 400,
-    slidesToShow: 2,
-    slidesToScroll: 1
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      }
+    ]
   };
 
   return (

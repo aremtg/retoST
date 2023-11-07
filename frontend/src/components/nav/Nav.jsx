@@ -40,7 +40,7 @@ const Nav = () => {
           <div className="absolute bottom-6 left-6 bg-red-500 text-white w-6 h-6 flex items-center justify-center rounded-full font-bold">1</div>
 
         </Link>
-        <Link to={isAuthenticated ? "/profile" : "/login"} className={estilos.link}>
+        <Link to={isAuthenticated ? "/profile" : "/login"}>
           <UserProfile
             useruser={isAuthenticated ? 'Perfil' : 'Ingresar'}
             srcProfileImage="src/img/user_icon.jpg"
