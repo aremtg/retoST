@@ -20,64 +20,73 @@ const Home = () => {
       <br />
       <div className={`${estilos.contenedorProducts}`}>
       <ProductoCard
-        nombreP='producto1'
+        nombreP='Portátil Dell Vostro 3405'
         imagenSrc='src/img/p1.png'
         precio='88'
       />
       <ProductoCard
-        nombreP='producto2'
+        nombreP='Portátil HP 15-EF2517LA'
         imagenSrc='src/img/p2.png'
         precio='88'
       />
       <ProductoCard
-        nombreP='producto3'
+        nombreP='Portatil Asus E1504fa'
         imagenSrc='src/img/p3.png'
         precio='88'
       />
       <ProductoCard
-        nombreP='producto4'
+        nombreP='Portatil Lenovo Ryzen'
         imagenSrc='src/img/p4.png'
         precio='88'
       />
       <ProductoCard
-        nombreP='producto5'
+        nombreP='Dell Inspiron 3511'
         imagenSrc='src/img/p5.png'
         precio='88'
       />
       <ProductoCard
-        nombreP='producto6'
+        nombreP='Asus VivoBook'
         imagenSrc='src/img/p6.png'
         precio='88'
       />
       <ProductoCard
-        nombreP='producto7'
+        nombreP='HP 245 G8 negra'
         imagenSrc='src/img/p7.png'
         precio='88'
       />
        <ProductoCard
-        nombreP='producto8'
+        nombreP='Audífonos Jbl T110'
         imagenSrc='src/img/p8.png'
         precio='88'
       />
        <ProductoCard
-        nombreP='producto9'
+        nombreP='Audífonos Inalámbricos Con Noise'
         imagenSrc='src/img/p9.png'
         precio='88'
       /> <ProductoCard
-        nombreP='producto10'
+        nombreP='Audífonos Inalámbricos Wh-ch520'
         imagenSrc='src/img/p10.png'
         precio='88'
       />
-       <ProductoCard
-        nombreP='producto11'
-        imagenSrc='src/img/p11.png'
+        <ProductoCard
+        nombreP='Audífonos Inalámbricos Con Noise'
+        imagenSrc='src/img/p9.png'
+        precio='88'
+      /> <ProductoCard
+        nombreP='Audífonos Inalámbricos Wh-ch520'
+        imagenSrc='src/img/p10.png'
         precio='88'
       />
-       <ProductoCard
-        nombreP='producto12'
-        imagenSrc='src/img/p12.png'
+        <ProductoCard
+        nombreP='Audífonos Inalámbricos Con Noise'
+        imagenSrc='src/img/p9.png'
+        precio='88'
+      /> <ProductoCard
+        nombreP='Audífonos Inalámbricos Wh-ch520'
+        imagenSrc='src/img/p10.png'
         precio='88'
       />
+      
       </div>
       
     </Box>
