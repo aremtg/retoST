@@ -10,42 +10,11 @@
   color: black;
   font-size: 20px;
 }
-@keyframes floatAnimation {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-}
-
-.imgFlotante {
-width: 400px;
-animation: floatAnimation 3s infinite ease-in-out;
-}
-
-.contenedorProducts {
-  max-width: 100%;
-  background-color: var(--blanco);
-  border-radius: var(--radiusPrimario);
-  padding: 1rem 0;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
- 
-}
-
 @media screen and (max-width: 700px) {
   .hero{
    display: flex;
    flex-direction: column;
    align-items: center;
-  }
-  .imgFlotante {
-    width: 50%;
   }
   .contenedorProducts{
     display: flex;

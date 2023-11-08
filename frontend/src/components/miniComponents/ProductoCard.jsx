@@ -6,9 +6,9 @@ const ProductoCard = ({ nombreP, precio ,imagenSrc, altImg}) => {
   // const imageUrl = `http://localhost:5173/uploads/${producto.image}`;
   return (
     <div className={`${estilos.productoCard} shadow-md`}>
-      <img src={imagenSrc} alt={altImg} />
+      <img src={imagenSrc} alt={altImg}  />
       <h1>{nombreP}</h1>
-      <p>Precio: {precio} </p>
+      <p>$: {precio} </p>
       <button className={`${estilos.botonAgregar} flex justify-center items-center shadow-md my_button`}>
         Agregar
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
