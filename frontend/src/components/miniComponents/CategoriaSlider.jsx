@@ -8,27 +8,22 @@ const CategoriaSlider = () => {
     {
       imagen: 'src/img/computador.png',
       titulo: 'Portatiles',
-      descripcion: 'Breve descripcion, categ... 1',
     },
     {
       imagen: 'src/img/telefono.png',
       titulo: 'Telefonos',
-      descripcion: 'Breve descripcion, categ... 2',
     },
     {
       imagen: 'src/img/accesorio.png',
       titulo: 'Accesorios',
-      descripcion: 'Breve descripcion, categ... 3',
     },
     {
-      imagen: 'src/img/accesorio.png',
+      imagen: 'src/img/monitores.png',
       titulo: 'Monitores',
-      descripcion: 'Breve descripcion, categ... 3',
     },
     {
-      imagen: 'src/img/accesorio.png',
+      imagen: 'src/img/p7.png',
       titulo: 'Escritorio',
-      descripcion: 'Breve descripcion, categ... 3',
     },
   ];
 
@@ -57,7 +52,6 @@ const CategoriaSlider = () => {
 
             <img src={categoria.imagen} alt={categoria.titulo} />
             <h2>{categoria.titulo}</h2>
-            <p>{categoria.descripcion}</p>
             
             <button className='my_button'>Ver mas...</button>
 
