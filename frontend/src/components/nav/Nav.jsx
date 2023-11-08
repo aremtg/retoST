@@ -43,7 +43,7 @@ const Nav = () => {
         <Link to={isAuthenticated ? "/profile" : "/login"}>
           <UserProfile
             useruser={isAuthenticated ? 'Perfil' : 'Ingresar'}
-            srcProfileImage="src/img/user_icon.jpg"
+            srcProfileImage="../src/img/user_icon.jpg"
             classNameBoxUser={`${estilos.boxUserNav} boxUserNav`}
             classNameContImg={estilos.contImg}
           />
