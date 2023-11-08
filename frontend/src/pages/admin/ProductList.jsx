@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Box from "../../components/miniComponents/Box";
 
 function ProductList() {
   const [products, setProducts] = useState([]);
@@ -30,12 +31,13 @@ function ProductList() {
   };
 
   return (
-    <div>
+    <Box>
+
       <h2>Lista de Productos</h2>
       <table>
         <thead>
           <tr>
-            <th>ID</th>
+            <th className='border-spacing-px'>ID</th>
             <th>Nombre</th>
             <th>Precio</th>
             <th>Acciones</th>
@@ -55,7 +57,9 @@ function ProductList() {
           ))}
         </tbody>
       </table>
-    </div>
+    </Box>
+
+
   );
 }
 
