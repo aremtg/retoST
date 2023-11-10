@@ -8,13 +8,6 @@ import CategoriaSlider from "../../components/miniComponents/CategoriaSlider";
 const Home = () => {
   return (
     <Box>
-      {/* <div className={`${estilos.hero} shadow-md`}>
-        <img
-          src="src/img/nuevo.png"
-          alt=""
-          className={`${estilos.imgFlotante}`}
-        />
-      </div> */}
       <CategoriaSlider />
       <br />
       <br />

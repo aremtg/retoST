@@ -27,7 +27,7 @@ function Cart() {
             </p>
             <Link to="/">
               <button className=" my_button shadow-md bg-blue-600 hover:bg-blue-800 text-white font-bold py-1 px-3 rounded-full">
-                Añadir al carrito
+                Añadir productos al carrito
               </button>
             </Link>
           </div>
@@ -38,7 +38,7 @@ function Cart() {
             <h1 className="text-center">Resumen del pedido</h1>
             <span className="text-center">$000</span>
             <button
-              className={`${estilos.botonComprar} my_button shadow-md bg-blue-600 hover:bg-blue-800 text-white font-bold py-1 px-3 rounded-full`}
+              className={`${estilos.botonComprar} my_button shadow-md bg-green-600 hover:bg-blue-800 text-white font-bold py-1 px-3 rounded-full`}
             >
               Comprar
             </button>

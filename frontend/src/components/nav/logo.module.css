@@ -2,13 +2,13 @@
     color: var(--primario);
     font-size: 1.7rem;
     font-weight: 900;
-    animation: flota 3s infinite ease-in-out;
+    /* animation: flota 3s infinite ease-in-out; */
 }
-@keyframes flota {
+/* @keyframes flota {
     0%, 100% {
       transform: translateY(0);
     }
     50% {
       transform: translateY(-5px);
     }
-}
+} */
