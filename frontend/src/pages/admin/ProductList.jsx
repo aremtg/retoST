@@ -77,7 +77,7 @@ function ProductList() {
       <div className="relative">
         { /* ... Resto del código ... */}
         <Link to="/admin/add" className="text-white bg-blue-500 rounded-full p-3 fixed bottom-8 right-8">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-8 h-8">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4" />
           </svg>
         </Link>
