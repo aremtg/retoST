@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import Box from '../../components/miniComponents/Box';
 
 function ProductNew() {
   const [newProduct, setNewProduct] = useState({
@@ -59,46 +61,61 @@ function ProductNew() {
   };
 
   return (
-    <div className="max-w-md mx-auto my-8 p-6 bg-white rounded-md shadow-md">
-      <h2 className="text-2xl font-semibold mb-6">Agregar Nuevo Producto</h2>
-      <div className="mb-4">
-        <label className="block text-sm font-medium text-gray-700">Nombre</label>
-        <input
-          type="text"
-          name="nombre"
-          className="mt-1 p-2 border border-gray-300 rounded-md w-full"
-          value={newProduct.nombre}
-          onChange={handleInputChange}
-        />
+    <Box>
+
+      <div className="max-w-md mx-auto my-8 p-6 bg-white rounded-md shadow-md">
+        <h2 className="text-2xl font-semibold mb-6">Agregar Nuevo Producto</h2>
+        <div className="mb-4">
+          <label className="block text-sm font-medium text-gray-700">Nombre</label>
+          <input
+            type="text"
+            name="nombre"
+            className="mt-1 p-2 border border-gray-300 rounded-md w-full"
+            value={newProduct.nombre}
+            onChange={handleInputChange}
+          />
+        </div>
+        <div className="mb-4">
+          <label className="block text-sm font-medium text-gray-700">Precio</label>
+          <input
+            type="number"
+            name="precio"
+            className="mt-1 p-2 border border-gray-300 rounded-md w-full"
+            value={newProduct.precio}
+            onChange={handleInputChange}
+          />
+        </div>
+        <div className="mb-4">
+          <label className="block text-sm font-medium text-gray-700">Imagen</label>
+          <input
+            type="file"
+            name="imagen"
+            accept="image/*"
+            className="mt-1 p-2 border border-gray-300 rounded-md w-full"
+            onChange={handleInputChange}
+          />
+        </div>
+        <button
+          className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600"
+          onClick={handleAddProduct}
+        >
+          Agregar
+        </button>
+        <div className="relative">
+          { /* ... Resto del código ... */}
+          <Link to="/admin" className="text-white bg-red-500 rounded-full p-3 fixed bottom-8 right-8">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3" />
+            </svg>
+
+          </Link>
+        </div>
       </div>
-      <div className="mb-4">
-        <label className="block text-sm font-medium text-gray-700">Precio</label>
-        <input
-          type="number"
-          name="precio"
-          className="mt-1 p-2 border border-gray-300 rounded-md w-full"
-          value={newProduct.precio}
-          onChange={handleInputChange}
-        />
-      </div>
-      <div className="mb-4">
-        <label className="block text-sm font-medium text-gray-700">Imagen</label>
-        <input
-          type="file"
-          name="imagen"
-          accept="image/*"
-          className="mt-1 p-2 border border-gray-300 rounded-md w-full"
-          onChange={handleInputChange}
-        />
-      </div>
-      <button
-        className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600"
-        onClick={handleAddProduct}
-      >
-        Agregar
-      </button>
-    </div>
+
+    </Box>
   );
 }
+
+
 
 export default ProductNew;
