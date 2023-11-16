@@ -67,7 +67,6 @@ function ProductNew() {
           type="text"
           name="nombre"
           className="mt-1 p-2 border border-gray-300 rounded-md w-full"
-          placeholder="Nombre"
           value={newProduct.nombre}
           onChange={handleInputChange}
         />
@@ -78,7 +77,6 @@ function ProductNew() {
           type="number"
           name="precio"
           className="mt-1 p-2 border border-gray-300 rounded-md w-full"
-          placeholder="Precio"
           value={newProduct.precio}
           onChange={handleInputChange}
         />

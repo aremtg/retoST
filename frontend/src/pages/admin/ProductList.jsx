@@ -32,35 +32,34 @@ function ProductList() {
   return (
     <Box>
       {products.length === 0 ? (
-        <p>El inventario se encuentra vacío.</p>
+        <div className="text-center">
+          <p className="mb-4">El inventario se encuentra vacío.</p>
+          <Link to="/admin/add" className="text-blue-500">Agregar producto</Link>
+        </div>
       ) : (
-        <div className="product-list">
+        <div className="product-list grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {products.map((product) => (
-            <div key={product.id} className="product-item">
+            <div key={product.id} className="product-item border p-4 rounded-md">
               <img
                 src={`/uploads/${product.imagen}`}
                 alt={`Imagen de ${product.nombre}`}
-                className="product-image"
+                className="product-image max-h-40 object-cover mx-auto mb-4"
               />
 
               <div className="product-details">
-                <h3 className="product-name">
+                <h3 className="text-lg font-semibold mb-2">
                   {product.nombre} (ID: {product.id})
                 </h3>
-                <p className="product-price">${product.precio}</p>
+                <p className="text-gray-700">${product.precio}</p>
               </div>
-              <div className="product-actions">
-                <Link to={`/admin/edit/${product.id}`}>Editar</Link>
-                <button onClick={() => handleDeleteProduct(product.id)}>Eliminar</button>
+              <div className="product-actions mt-4">
+                <Link to={`/admin/edit/${product.id}`} className="text-blue-500 mr-4">Editar</Link>
+                <button onClick={() => handleDeleteProduct(product.id)} className="text-red-500">Eliminar</button>
               </div>
             </div>
           ))}
         </div>
       )}
-
-      <div className="add-product-button">
-        <Link to="/admin/add">Agregar producto</Link>
-      </div>
 
       {/* ToastContainer para mostrar las alertas */}
       <ToastContainer />
