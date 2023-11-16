@@ -1,15 +1,15 @@
 const express = require('express');
+const bodyParser = require('body-parser');
+const cors = require('cors');
+const productsRouter = require('./routes/products');
+
 const app = express();
 
-app.use(express.json());
-const cors = require('cors');
 app.use(cors());
+app.use(bodyParser.json());
+app.use('/api/products', productsRouter);
 
-const port = 3000;
-const productRoutes = require('./routes/products');
-app.use('/api/products', productRoutes);
-
-app.listen(port, () => {
-  console.log(`Servidor en ejecución en el puerto ${port}`);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
-

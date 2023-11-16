@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Box from "../../components/miniComponents/Box";
 
 function ProductList() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    // Realiza una solicitud GET a la API para obtener la lista de productos
     fetch('/api/products')
       .then((response) => response.json())
       .then((data) => setProducts(data))
@@ -14,14 +15,12 @@ function ProductList() {
   }, []);
 
   const handleDeleteProduct = (productId) => {
-    // Realiza una solicitud DELETE a la API para eliminar el producto por su ID
     fetch(`/api/products/${productId}`, {
       method: 'DELETE',
     })
       .then((response) => {
         if (response.status === 200) {
-          console.log('Producto eliminado con éxito');
-          // Recarga la página actual para refrescar la lista de productos
+          toast.success('Producto eliminado con éxito');
           window.location.reload();
         } else {
           console.error('Error al eliminar el producto');
@@ -32,34 +31,40 @@ function ProductList() {
 
   return (
     <Box>
-
-      <h2>Lista de Productos</h2>
-      <table>
-        <thead>
-          <tr>
-            <th className='border-spacing-px'>ID</th>
-            <th>Nombre</th>
-            <th>Precio</th>
-            <th>Acciones</th>
-          </tr>
-        </thead>
-        <tbody>
+      {products.length === 0 ? (
+        <p>El inventario se encuentra vacío.</p>
+      ) : (
+        <div className="product-list">
           {products.map((product) => (
-            <tr key={product.id}>
-              <td>{product.id}</td>
-              <td>{product.nombre}</td>
-              <td>${product.precio}</td>
-              <td>
+            <div key={product.id} className="product-item">
+              <img
+                src={`/uploads/${product.imagen}`}
+                alt={`Imagen de ${product.nombre}`}
+                className="product-image"
+              />
+
+              <div className="product-details">
+                <h3 className="product-name">
+                  {product.nombre} (ID: {product.id})
+                </h3>
+                <p className="product-price">${product.precio}</p>
+              </div>
+              <div className="product-actions">
                 <Link to={`/admin/edit/${product.id}`}>Editar</Link>
                 <button onClick={() => handleDeleteProduct(product.id)}>Eliminar</button>
-              </td>
-            </tr>
+              </div>
+            </div>
           ))}
-        </tbody>
-      </table>
+        </div>
+      )}
+
+      <div className="add-product-button">
+        <Link to="/admin/add">Agregar producto</Link>
+      </div>
+
+      {/* ToastContainer para mostrar las alertas */}
+      <ToastContainer />
     </Box>
-
-
   );
 }
 

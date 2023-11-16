@@ -3,8 +3,11 @@ import { useParams } from 'react-router-dom';
 
 function ProductEdit() {
   const { id } = useParams();
-  const [product, setProduct] = useState({});
-  const [newData, setNewData] = useState({});
+  const [product, setProduct] = useState({
+    nombre: '',
+    precio: '',
+    imagen: null, // Nuevo campo para la imagen
+  });
 
   useEffect(() => {
     fetch(`/api/products/${id}`)
@@ -14,16 +17,31 @@ function ProductEdit() {
   }, [id]);
 
   const handleUpdateProduct = () => {
+    const formData = new FormData();
+    formData.append('nombre', product.nombre);
+    formData.append('precio', product.precio);
+    formData.append('imagen', product.imagen);
+
     fetch(`/api/products/${id}`, {
       method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(newData),
+      body: formData,
     })
       .then((response) => response.json())
-      .then((data) => setProduct(data))
+      .then((data) => {
+        console.log('Producto actualizado con éxito:', data);
+      })
       .catch((error) => console.error('Error:', error));
+  };
+
+  const handleInputChange = (event) => {
+    const { name, type } = event.target;
+
+    const inputValue = type === 'file' ? event.target.files[0] : event.target.value;
+
+    setProduct({
+      ...product,
+      [name]: inputValue,
+    });
   };
 
   return (
@@ -31,15 +49,18 @@ function ProductEdit() {
       <h2>Editar Producto</h2>
       <p>Nombre: {product.nombre}</p>
       <p>Precio: ${product.precio}</p>
+
+      <input type="file" name="imagen" accept="image/*" onChange={handleInputChange} />
+
       <input
         type="text"
         placeholder="Nuevo nombre"
-        onChange={(e) => setNewData({ ...newData, nombre: e.target.value })}
+        onChange={(e) => setProduct({ ...product, nombre: e.target.value })}
       />
       <input
         type="number"
         placeholder="Nuevo precio"
-        onChange={(e) => setNewData({ ...newData, precio: e.target.value })}
+        onChange={(e) => setProduct({ ...product, precio: e.target.value })}
       />
       <button onClick={handleUpdateProduct}>Actualizar</button>
     </div>
