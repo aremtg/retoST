@@ -40,41 +40,49 @@ function Register() {
   
 
   return (
-    <Box>
-      <form className={estilos.form}>
-        <h1>Regístrate</h1>
-        <div className={`${estilos.control} control`}>
-          Correo:
-          <label>
-            <input type="text" name="email" value={formData.email} onChange={handleInputChange} />
-          </label>
-        </div>
-        <div className={`${estilos.control} control`}>
-          Contraseña:
-          <label>
-            <input
-              type="password"
-              name="password"
-              value={formData.password}
-              onChange={handleInputChange}
-            />
-          </label>
-        </div>
-        <div className={estilos.divBtnForm}>
-          <button
-            type="button"
-            className={`shadow-md my_button`}
-            onClick={handleRegistration}
-          >
-            Registrarme
-          </button>
-        </div>
-        <div className='flex items-center justify-center'>
-          <Link to='/login' className={`${estilos.myLink}`}>
-            Ya tengo cuenta, "Ingresar".
-          </Link>
-        </div>
-      </form>
+    <Box className=' py-auto'>
+      <form className={`${estilos.form} max-w-md mx-auto p-6 bg-white rounded-xl shadow-md flex flex-col`}>
+  <h1 className="text-2xl font-bold text-center mb-4">Regístrate</h1>
+
+  <div className={`${estilos.control} flex flex-col mb-4`}>
+    <label className="mb-1">Correo:</label>
+    <input
+      type="text"
+      name="email"
+      value={formData.email}
+      onChange={handleInputChange}
+      className="py-2 px-3 border border-gray-300 rounded-xl focus:outline-none focus:ring focus:border-blue-500"
+    />
+  </div>
+
+  <div className={`${estilos.control} flex flex-col mb-4`}>
+    <label className="mb-1">Contraseña:</label>
+    <input
+      type="password"
+      name="password"
+      value={formData.password}
+      onChange={handleInputChange}
+      className="py-2 px-3 border border-gray-300 rounded-xl focus:outline-none focus:ring focus:border-blue-500"
+    />
+  </div>
+
+  <div className={estilos.divBtnForm}>
+    <button
+      type="button"
+      className={`bg-blue-500 text-white py-2 px-4 shadow-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-700 my_button`}
+      onClick={handleRegistration}
+    >
+      Registrarme
+    </button>
+  </div>
+
+  <div className="flex items-center justify-center">
+    <Link to="/login" className={`${estilos.myLink} text-blue-500 hover:underline`}>
+      Ya tengo cuenta, "Ingresar".
+    </Link>
+  </div>
+</form>
+
     </Box>
   );
 }

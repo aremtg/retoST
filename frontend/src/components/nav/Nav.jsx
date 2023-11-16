@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import estilos from './nav.module.css';
 import Logo from './Logo';
-import UserProfile from '../miniComponents/UserImgName';
+import btnIngresar from '../miniComponents/btnIngresar';
+import BtnIngresar from '../miniComponents/btnIngresar';
 
 const Nav = () => {
 
@@ -26,7 +27,7 @@ const Nav = () => {
 
   return (
     <>
-      <div className={`${estilos.contNav} ${activo ? estilos.activo : ''} flex items-center shadow-md justify-between m-auto py-3 px-3 static`}>
+      <div className={`${estilos.contNav} ${activo ? estilos.activo : ''} flex items-center shadow-md justify-between m-auto py-3 px-10 static`}>
         <Logo className={estilos.logo} />
         <nav className={`${estilos.nav} w-6/12 justify-center items-center`}>
           <div className={`${estilos.buscador} w-full`}>
@@ -41,9 +42,8 @@ const Nav = () => {
 
         </Link>
         <Link to={isAuthenticated ? "/profile" : "/login"}>
-          <UserProfile
+          <BtnIngresar
             useruser={isAuthenticated ? 'Perfil' : 'Ingresar'}
-            srcProfileImage="../src/img/user_icon.jpg"
             classNameBoxUser={`${estilos.boxUserNav} boxUserNav`}
             classNameContImg={estilos.contImg}
           />

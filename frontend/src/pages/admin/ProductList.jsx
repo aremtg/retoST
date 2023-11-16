@@ -54,7 +54,7 @@ function ProductList() {
               </div>
               <div className="product-actions mt-4">
                 <Link to={`/admin/edit/${product.id}`} className="text-blue-500 mr-4">Editar</Link>
-                <button onClick={() => handleDeleteProduct(product.id)} className="text-red-500">Eliminar</button>
+                <button onClick={() => handleDeleteProduct(product.id)} className="text-red-500 my_button">Eliminar</button>
               </div>
             </div>
           ))}

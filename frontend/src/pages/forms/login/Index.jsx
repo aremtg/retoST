@@ -35,33 +35,47 @@ function Login() {
 
   return (
     <Box>
-      <form className={`${estilos.form} gap-4`}>
-        <h1>Login</h1>
-        {error && <div className={estilos.error}>{error}</div>}
-        <div className={`${estilos.control} control`}>
-          Correo Electrónico:
-          <label>
-            <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
-          </label>
-        </div>
-        <div className={`${estilos.control} control`}>
-          Contraseña:
-          <label>
-            <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-          </label>
-        </div>
+     <form className={`${estilos.form} max-w-md mx-auto p-6 bg-white rounded-xl shadow-xl flex flex-col gap-4`}>
+  <h1 className="text-2xl font-bold text-center">Login</h1>
+  {error && <div className={`${estilos.error} bg-red-100 border border-red-400 text-red-700 px-4 py-2 rounded-md`}>{error}</div>}
 
-        <div className={estilos.divBtnForm}>
-          <button type="button" className={`shadow-md my_button`} onClick={handleLogin}>
-            Ingresar
-          </button>
-        </div>
-        <div className='flex items-center justify-center'>
-          <Link to='/register' className={`${estilos.myLink}`}>
-            No tengo cuenta, "Registrarme".
-          </Link>
-        </div>
-      </form>
+  <div className={`${estilos.control} flex flex-col`}>
+    <label className="mb-1">Correo Electrónico:</label>
+    <input
+      type="text"
+      value={email}
+      onChange={(e) => setEmail(e.target.value)}
+      className="py-2 px-3 border border-gray-300 rounded-xl focus:outline-none focus:ring focus:border-blue-500"
+    />
+  </div>
+
+  <div className={`${estilos.control} flex flex-col`}>
+    <label className="mb-1">Contraseña:</label>
+    <input
+      type="password"
+      value={password}
+      onChange={(e) => setPassword(e.target.value)}
+      className="py-2 px-3 border border-gray-300 rounded-xl focus:outline-none focus:ring focus:border-blue-500"
+    />
+  </div>
+
+  <div className={estilos.divBtnForm}>
+    <button
+      type="button"
+      className={`bg-blue-500 text-white py-2 px-4 shadow-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-700 my_button`}
+      onClick={handleLogin}
+    >
+      Ingresar
+    </button>
+  </div>
+
+  <div className="flex items-center justify-center">
+    <Link to="/register" className={`${estilos.myLink} text-blue-500 hover:underline`}>
+      No tengo cuenta, "Registrarme".
+    </Link>
+  </div>
+</form>
+
     </Box>
   );
 }

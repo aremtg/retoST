@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Nav from './components/nav/Nav';
 import Footer from './components/footer/Footer';
 import Home from './pages/home/Index.jsx';
-import Profile from './pages/profile/Index.jsx';
 import Register from './pages/forms/register/Index';
 import Login from './pages/forms/login/Index';
 import Cart from './pages/cart/Cart';
@@ -16,7 +15,6 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/profile" element={<Profile />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/cart" element={<Cart />} />

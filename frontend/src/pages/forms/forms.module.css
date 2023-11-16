@@ -1,62 +1,12 @@
-.form {
-    width: 45%;
-    margin: auto;
-    background-color: rgb(255, 255, 255);
-    box-shadow: var(--sombra1);
-    border-radius: var(--radiusPrimario);
-    padding: 3rem .5rem;
-}
 
-.form h1 {
-    text-align: center;
-    font-size: 2rem;
-}
-.control{
-    margin: .5rem;
-}
-.control label {
-    font-size: 1rem;
-}
-
-.control input {
-    width: 100%;
-    background-color: var(--secundario);
-    outline: none;
-    border-radius: var(--radiusPrimario);
-    text-indent: 10px;
-    padding: .3rem;
-}
-
-.control input:focus {
-    box-shadow: 0 0 10px var(--primario);
-}
-
-.divBtnForm {
+.divBtnForm{
     display: flex;
     justify-content: center;
-}
-
-.divBtnForm button {
-    background-color: var(--primario);
-    color: var(--letraBotones);
-    border-radius: var(--radiusPrimario);
-}
-
-.myLink {
-    width: 100%;
-    text-align: center;
-    text-decoration: underline;
-}
-
-.myLink:hover {
-    color: var(--primario);
 }
 
 @media screen and (max-width: 700px) {
     .form {
         width: 80%;
     }
-
-
 
 }
