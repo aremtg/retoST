@@ -6,7 +6,7 @@
 :root {
   --primario: rgb(29 78 216);
   --secundario: #eeeef2;
-  --navAndFooter: #ffffff;
+  --navAndFooter: rgb(255, 251, 4);
 
   --fondoTrasparente:rgba(255, 255, 255, 0.094);
   --letraBotones: white;
