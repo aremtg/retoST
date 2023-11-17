@@ -25,11 +25,6 @@ function Cart() {
             <p className="text-base sm:text-lg md:text-xl">
               Aun no hay productos
             </p>
-            <Link to="/">
-              <button className=" my_button shadow-md bg-blue-600 hover:hover:bg-slate-800 text-white font-bold py-1 px-3 rounded-full">
-                Añadir productos al carrito
-              </button>
-            </Link>
           </div>
         </div>
 
