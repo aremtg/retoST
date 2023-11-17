@@ -100,7 +100,7 @@ function ProductNew() {
           />
         </div>
         <button
-          className="bg-blue-700 text-white py-2 px-4 rounded-md hover:bg-blue-800 my_button w-full"
+          className="bg-black text-white py-2 px-4 rounded-md hover:hover:bg-slate-800 my_button w-full"
           onClick={handleAddProduct}
         >
           Agregar
@@ -109,7 +109,7 @@ function ProductNew() {
           {/* ... Resto del código ... */}
           <Link
             to="/admin"
-            className="text-white bg-blue-700 rounded-full p-3 fixed bottom-8 right-8"
+            className="text-white bg-black rounded-full p-3 fixed bottom-8 right-8"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

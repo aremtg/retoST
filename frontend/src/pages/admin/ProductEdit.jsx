@@ -111,7 +111,7 @@ function ProductEdit() {
           {/* ... Resto del código ... */}
           <Link
             to="/admin"
-            className="text-white bg-blue-700 rounded-full p-3 fixed bottom-8 right-8"
+            className="text-white bg-black rounded-full p-3 fixed bottom-8 right-8"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

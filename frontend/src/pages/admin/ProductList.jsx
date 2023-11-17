@@ -38,7 +38,7 @@ function ProductList() {
          </svg>
          <p className="mt-4 mb-2 text-2xl font-semibold">¡El inventario está vacío!</p>
          <p className="mb-8">Agrega productos para mostrar.</p>
-         <Link to="/admin/add" className="inline-block bg-blue-700 hover:bg-blue-600 text-white py-2 px-4 rounded-md transition duration-300">
+         <Link to="/admin/add" className="inline-block bg-black hover:bg-slate-800 text-white py-2 px-4 rounded-md transition duration-300">
            Agregar producto
            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="inline-block w-6 h-6 ml-2 align-middle">
              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4" />
@@ -85,7 +85,7 @@ function ProductList() {
 
       <div className="relative">
         { /* ... Resto del código ... */}
-        <Link to="/admin/add" className="text-white bg-blue-700 rounded-full p-3 fixed bottom-8 right-8">
+        <Link to="/admin/add" className="text-white bg-black rounded-full p-3 fixed bottom-8 right-8">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4" />
           </svg>

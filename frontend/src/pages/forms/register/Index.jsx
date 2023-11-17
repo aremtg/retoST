@@ -69,7 +69,7 @@ function Register() {
   <div className={estilos.divBtnForm}>
     <button
       type="button"
-      className={`bg-blue-700 text-white py-2 px-4 shadow-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-700 my_button`}
+      className={`bg-black text-white py-2 px-4 shadow-md hover:bg-slate-800 focus:outline-none focus:ring focus:border-blue-700 my_button`}
       onClick={handleRegistration}
     >
       Registrarme

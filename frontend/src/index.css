@@ -4,7 +4,7 @@
 @tailwind utilities;
 /* -------------------------- */
 :root {
-  --primario: rgb(29 78 216);
+  --primario: rgb(0, 0, 0);
   --secundario: #eeeef2;
   --navAndFooter: rgb(255, 251, 4);
 

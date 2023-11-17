@@ -64,7 +64,7 @@ const Nav = () => {
         </Link>
 
         <MyBoton
-          className="flex justify-center items-center bg-blue-700 text-white py-2 px-4 shadow-md hover:bg-blue-800 my_button"
+          className="flex justify-center items-center bg-black text-white py-2 px-4 shadow-md hover:hover:bg-slate-800 my_button"
           text="Ingresar"
           linkTo={isAuthenticated ? "/profile" : "/login"}
           children={

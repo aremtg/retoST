@@ -12,7 +12,7 @@ const ProductoCard = ({ nombreP, precio ,imagenSrc, altImg}) => {
     <h1 className="text-xl font-bold mb-2">{nombreP}</h1>
     <p className="text-gray-700 font-medium mb-2">$ {precio}</p>
       <MyBoton
-          className="flex justify-center items-center bg-blue-700 text-white py-2 px-4 rounded-md shadow-md hover:bg-blue-800 "
+          className="flex justify-center items-center bg-black text-white py-2 px-4 rounded-xl shadow-md hover:bg-slate-800 "
           text="Agregar"
           children={
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 ml-2">
