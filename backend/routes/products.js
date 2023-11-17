@@ -66,22 +66,45 @@ router.get('/:id', (req, res) => {
   });
 });
 
-// Ruta para actualizar un producto por ID
 router.put('/:id', upload.single('imagen'), (req, res) => {
   const productId = req.params.id;
   const { nombre, precio } = req.body;
   const nuevaImagen = req.file ? req.file.buffer : null;
 
-  const query = 'UPDATE productos SET nombre = ?, precio = ?, imagen = ? WHERE id = ?';
-  db.query(query, [nombre, precio, nuevaImagen, productId], (err) => {
-    if (err) {
-      console.error(err);
-      res.status(500).json({ message: 'Error al actualizar el producto' });
-    } else {
-      res.json({ message: 'Producto actualizado con éxito' });
-    }
-  });
+  // Verificar si se proporcionó una nueva imagen
+  if (nuevaImagen) {
+    // Generar el nuevo nombre de archivo basado en el nombre del producto
+    const nombreProducto = nombre.toLowerCase().replace(/\s/g, '_');
+    const extension = path.extname(req.file.originalname);
+    const nuevoNombreImagen = `${nombreProducto}${extension}`;
+
+    // Mover la nueva imagen al directorio correcto con el nuevo nombre de archivo
+    fs.writeFileSync(path.join(__dirname, '../../frontend/public/uploads', nuevoNombreImagen), nuevaImagen);
+    
+    // Actualizar la base de datos con el nuevo nombre de archivo
+    const query = 'UPDATE productos SET nombre = ?, precio = ?, imagen = ? WHERE id = ?';
+    db.query(query, [nombre, precio, nuevoNombreImagen, productId], (err) => {
+      if (err) {
+        console.error(err);
+        res.status(500).json({ message: 'Error al actualizar el producto' });
+      } else {
+        res.json({ message: 'Producto actualizado con éxito' });
+      }
+    });
+  } else {
+    // Si no se proporciona una nueva imagen, actualizar solo nombre y precio
+    const query = 'UPDATE productos SET nombre = ?, precio = ? WHERE id = ?';
+    db.query(query, [nombre, precio, productId], (err) => {
+      if (err) {
+        console.error(err);
+        res.status(500).json({ message: 'Error al actualizar el producto' });
+      } else {
+        res.json({ message: 'Producto actualizado con éxito' });
+      }
+    });
+  }
 });
+
 
 // Ruta para eliminar un producto por ID
 router.delete('/:id', (req, res) => {

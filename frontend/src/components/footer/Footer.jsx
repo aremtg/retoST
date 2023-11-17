@@ -8,16 +8,13 @@ const  Footer =() =>{
         <ul>
           <span>&copy;<Logo /></span>
           <a href="">
-            <img src="../src/img/facebook.svg" alt="" />
+            <img src="/src/img/facebook.svg" alt="" />
           </a>
           <a href="">
-            <img src="../src/img/github.svg" alt="" />
+            <img src="/src/img/instagram.svg" alt="" />
           </a>
           <a href="">
-            <img src="../src/img/instagram.svg" alt="" />
-          </a>
-          <a href="">
-            <img src="../src/img/whatsapp.svg" alt="" />
+            <img src="/src/img/whatsapp.svg" alt="" />
           </a>
         </ul>
       </div>
