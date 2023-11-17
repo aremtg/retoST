@@ -62,8 +62,11 @@
     display: none;
     transition: all .5s;
   }
-  .boton{
+  .desaparece{
     display: none;
+  }
+  .contNav.activo .desaparece{
+    display: block;
   }
   .contNav.activo {
     flex-direction: column;
