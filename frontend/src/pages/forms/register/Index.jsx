@@ -40,11 +40,11 @@ function Register() {
   
 
   return (
-    <Box className=' py-auto'>
-      <form className={`${estilos.form} max-w-md mx-auto p-6 bg-white rounded-xl shadow-md flex flex-col`}>
+    <Box className={estilos.box}>
+      <form className={`${estilos.form} max-w-md mx-auto p-6 bg-white rounded-xl shadow-xl flex flex-col gap-4`}>
   <h1 className="text-2xl font-bold text-center mb-4">Regístrate</h1>
 
-  <div className={`${estilos.control} flex flex-col mb-4`}>
+  <div className={`${estilos.control}  flex flex-col`}>
     <label className="mb-1">Correo:</label>
     <input
       type="text"
@@ -55,7 +55,7 @@ function Register() {
     />
   </div>
 
-  <div className={`${estilos.control} flex flex-col mb-4`}>
+  <div className={`${estilos.control}  flex flex-col`}>
     <label className="mb-1">Contraseña:</label>
     <input
       type="password"
@@ -69,7 +69,7 @@ function Register() {
   <div className={estilos.divBtnForm}>
     <button
       type="button"
-      className={`bg-blue-500 text-white py-2 px-4 shadow-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-700 my_button`}
+      className={`bg-blue-700 text-white py-2 px-4 shadow-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-700 my_button`}
       onClick={handleRegistration}
     >
       Registrarme

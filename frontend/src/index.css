@@ -4,7 +4,7 @@
 @tailwind utilities;
 /* -------------------------- */
 :root {
-  --primario:  #2563EB;
+  --primario: rgb(29 78 216);
   --secundario: #eeeef2;
   --navAndFooter: #ffffff;
 
@@ -50,7 +50,6 @@ body {
 }
 .my_button {
   border: none;
-  padding: 5px 10px;
   border-radius: var(--radiusPrimario);
   cursor: pointer;
 }

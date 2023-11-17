@@ -34,13 +34,13 @@ function Login() {
   }
 
   return (
-    <Box>
+    <Box className={estilos.box}>
      <form className={`${estilos.form} max-w-md mx-auto p-6 bg-white rounded-xl shadow-xl flex flex-col gap-4`}>
   <h1 className="text-2xl font-bold text-center">Login</h1>
   {error && <div className={`${estilos.error} bg-red-100 border border-red-400 text-red-700 px-4 py-2 rounded-md`}>{error}</div>}
 
   <div className={`${estilos.control} flex flex-col`}>
-    <label className="mb-1">Correo Electrónico:</label>
+    <label className="mb-1">Correo: </label>
     <input
       type="text"
       value={email}
@@ -62,7 +62,7 @@ function Login() {
   <div className={estilos.divBtnForm}>
     <button
       type="button"
-      className={`bg-blue-500 text-white py-2 px-4 shadow-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-700 my_button`}
+      className={`bg-blue-700 text-white py-2 px-4 shadow-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-700 my_button`}
       onClick={handleLogin}
     >
       Ingresar
