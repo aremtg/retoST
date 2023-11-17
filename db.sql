@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 17-11-2023 a las 15:05:06
--- Versión del servidor: 10.4.28-MariaDB
--- Versión de PHP: 8.2.4
+-- Tiempo de generación: 17-11-2023 a las 16:20:19
+-- Versión del servidor: 10.4.24-MariaDB
+-- Versión de PHP: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -32,14 +32,22 @@ CREATE TABLE `productos` (
   `nombre` varchar(100) NOT NULL,
   `precio` int(20) NOT NULL,
   `imagen` varchar(500) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `productos`
 --
 
 INSERT INTO `productos` (`id`, `nombre`, `precio`, `imagen`) VALUES
-(49, 'Torre 15-EF2517LA', 2400000, 'torre_15-ef2517la.png');
+(53, 'Monitor Vostro 3405', 2400999, 'monitor_vostro_3405.png'),
+(54, 'Torre 15-EF2517LA', 2400999, 'torre_15-ef2517la.png'),
+(55, 'Portátil Lenovo Ryzen', 3899999, 'portátil_lenovo_ryzen.png'),
+(56, 'Dell Inspiron 3511', 3560999, 'dell_inspiron_3511.png'),
+(57, 'Asus VivoBook', 1350000, 'asus_vivobook.png'),
+(58, 'HP 245 G8 negra', 3200000, 'hp_245_g8_negra.png'),
+(59, 'Audífonos Jbl T110', 50000, 'audífonos_jbl_t110.png'),
+(60, 'Audífonos Inalámbricos Con Noise', 97000, 'audífonos_inalámbricos_con_noise.png'),
+(61, 'Portátil HP 15-EF2517LA', 3000000, 'portátil_hp_15-ef2517la.png');
 
 --
 -- Índices para tablas volcadas
@@ -59,7 +67,7 @@ ALTER TABLE `productos`
 -- AUTO_INCREMENT de la tabla `productos`
 --
 ALTER TABLE `productos`
-  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
