@@ -2,10 +2,7 @@
   background-color: var(--navAndFooter);
   transition: all .5s;
 }
-.nav{
-  display: flex;
-  transition: all .5s;
-}
+
 .buscador input {
   text-indent: 5px;
   border: 2px solid #ccc;
@@ -15,23 +12,28 @@
 }
 
 .buscador input::placeholder {
-  color: #999; 
+  color: #999;
 }
 
 .buscador input:focus {
-  border-color:var(--primario); 
+  border-color: var(--primario);
 }
+
 /* SOLAMENTE EN EL NAV TENDRA UN MARGIN LEFT DE: */
 
-.contCarrito{
-  background-color:var(--blanco);
+.contCarrito {
+  background-color: var(--blanco);
   border-radius: var(--radiusPrimario);
 
 }
-.btnMenu{
+
+.btnMenu {
   display: none;
 }
-.bar1, .bar2, .bar3 {
+
+.bar1,
+.bar2,
+.bar3 {
   display: block;
   width: 25px;
   height: 3px;
@@ -40,41 +42,51 @@
   transition: all .5s;
   background-color: #000000;
 }
+
 /* para que se transforme en X*/
 .open .bar1 {
   transform: rotate(-45deg) translate(-7px, 6px);
 }
+
 .open .bar2 {
   opacity: 0;
 }
+
 .open .bar3 {
   transform: rotate(45deg) translate(-6px, -6px);
 }
-@media screen and (max-width: 700px) {
 
-  .buscador{
+@media screen and (max-width: 750px) {
+
+  .buscador {
     display: none;
     transition: all .5s;
   }
-  .contNav.activo{
+  .boton{
+    display: none;
+  }
+  .contNav.activo {
     flex-direction: column;
     gap: 1rem;
     transition: all .5s;
   }
-  .contNav.activo .buscador{
+
+  .contNav.activo .buscador {
     display: block;
     transition: all .5s;
     width: 100%;
   }
-  .btnMenu{
+
+  .btnMenu {
     display: block;
   }
-  .contNav.activo .btnMenu{
+
+  .contNav.activo .btnMenu {
     position: absolute;
     right: 15px;
   }
+
   .contImg {
     display: none;
   }
-  }
-  
+}
