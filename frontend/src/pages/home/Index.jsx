@@ -16,21 +16,27 @@ const Home = () => {
   }, []);
 
   return (
-    <Box>
-      <CategoriaSlider />
-      <br />
-      <br />
-      <div className={`${estilos.contenedorProducts} w-full flex justify-center bg-white py-3 rounded-xl flex-wrap gap-2`}>
-        {products.map((product) => (
-          <ProductoCard
-            key={product.id}
-            nombreP={product.nombre}
-            imagenSrc={`/uploads/${product.imagen}`}
-            precio={product.precio}
-          />
-        ))}
+    <>
+      <div>
+        <h2 className="absolute top-36 w-full bg-red-500 px-4 py-2 text-white text-center">"¡Vive el futuro hoy en Tecshope! Descubre lo último en tecnología."</h2>
       </div>
-    </Box>
+      <Box>
+        <CategoriaSlider />
+        <br />
+        <br />
+        <div className={`${estilos.contenedorProducts} w-full flex justify-center bg-white py-3 rounded-xl flex-wrap gap-2`}>
+          {products.map((product) => (
+            <ProductoCard
+              key={product.id}
+              nombreP={product.nombre}
+              imagenSrc={`/uploads/${product.imagen}`}
+              precio={product.precio}
+            />
+          ))}
+        </div>
+      </Box>
+    </>
+
   );
 };
 

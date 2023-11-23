@@ -58,7 +58,7 @@ function ProductEdit() {
 
   return (
     <Box>
-      <div className="max-w-md mx-auto p-6 bg-white rounded-xl shadow-md">
+      <div className="max-w-md mx-auto p-6 bg-white rounded-md shadow-md">
         <h2 className="text-2xl text-center font-semibold mb-6">
           Editar Producto
         </h2>

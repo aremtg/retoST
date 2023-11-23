@@ -1,11 +1,15 @@
 .contNav {
+ 
   background-color: var(--navAndFooter);
   transition: all .5s;
 }
-
+.buscador{
+  width: 100%;
+}
 .buscador input {
+  width: 90%;
   text-indent: 5px;
-  border: 2px solid #ccc;
+  border: 2px solid #ececec;
   border-radius: var(--radiusPrimario);
   font-size: 16px;
   outline: none;
@@ -58,7 +62,7 @@
 
 @media screen and (max-width: 750px) {
 
-  .buscador {
+  .buscador , .buscador input{
     display: none;
     transition: all .5s;
   }
@@ -74,7 +78,7 @@
     transition: all .5s;
   }
 
-  .contNav.activo .buscador {
+  .contNav.activo .buscador, .buscador input {
     display: block;
     transition: all .5s;
     width: 100%;

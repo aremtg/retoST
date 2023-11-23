@@ -6,13 +6,13 @@ const ProductoCard = ({ nombreP, precio ,imagenSrc, altImg}) => {
   // Combina la ruta base del servidor con la ruta relativa de la imagen
   // const imageUrl = `http://localhost:5173/uploads/${producto.image}`;
   return (
-    <div className={`${estilos.productoCard} shadow-md overflow-hidden rounded-lg border border-gray-200`}>
+    <div className={`${estilos.productoCard} shadow-md overflow-hidden rounded-md border border-gray-200`}>
   <img src={imagenSrc} alt={altImg} className="w-full h-64 object-cover" />
   <div className={`${estilos.detalles} p-4`}>
     <h1 className="text-xl font-bold mb-2">{nombreP}</h1>
-    <p className="text-gray-700 font-medium mb-2">$ {precio}</p>
+    <p className="text-gray-700 font-medium mb-2">$ {precio} COP</p>
       <MyBoton
-          className="flex justify-center items-center bg-black text-white py-2 px-4 rounded-xl shadow-md hover:bg-slate-800 "
+          className="w-full flex justify-center items-center bg-black text-white py-2 px-2 shadow-md hover:bg-slate-800 my_button"
           text="Agregar"
           children={
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 ml-2">

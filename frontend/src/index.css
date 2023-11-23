@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
-@tailwind base;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Poppins:ital,wght@0,400;0,600;0,700;0,800;0,900;1,200;1,400;1,700;1,800&display=swap');@tailwind base;
 @tailwind components;
 @tailwind utilities;
 /* -------------------------- */
 :root {
   --primario: rgb(0, 0, 0);
   --secundario: #eeeef2;
-  --navAndFooter: rgb(255, 251, 4);
+  --navAndFooter: rgb(255, 255, 255);
 
   --fondoTrasparente:rgba(255, 255, 255, 0.094);
   --letraBotones: white;
-  --radiusPrimario: 1.5rem;
+  --radiusPrimario: 6px;
 
   --blanco: rgb(255, 255, 255);
   --sombra1:  0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);

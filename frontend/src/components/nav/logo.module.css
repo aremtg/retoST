@@ -1,9 +1,8 @@
-.logoh1{
+/* .logoh1{
     color: var(--primario);
     font-size: 1.7rem;
     font-weight: 900;
-    /* animation: flota 3s infinite ease-in-out; */
-}
+} */
 /* @keyframes flota {
     0%, 100% {
       transform: translateY(0);
@@ -12,3 +11,7 @@
       transform: translateY(-5px);
     }
 } */
+ /* animation: flota 3s infinite ease-in-out; */
+ .logo{
+  width: 220px;
+ }

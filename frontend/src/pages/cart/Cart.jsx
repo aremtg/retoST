@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import Box from "../../components/miniComponents/Box";
 import estilos from "./cart.module.css";
+import MyBoton from "../../components/miniComponents/MyBoton";
+
 function Cart() {
   return (
     <Box>
@@ -32,11 +34,9 @@ function Cart() {
           <div className={`${estilos.total}  flex flex-col`}>
             <h1 className="text-center">Resumen del pedido</h1>
             <span className="text-center">$000</span>
-            <button
-              className={`${estilos.botonComprar} my_button shadow-md bg-green-600 hover:hover:bg-slate-800 text-white font-bold py-1 px-3 rounded-full`}
-            >
-              Comprar
-            </button>
+          <MyBoton
+            text={'hh'}
+          />
           </div>
           <br />
           <div className="p-6">

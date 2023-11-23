@@ -1,4 +1,4 @@
-.footer{
+.footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,31 +7,39 @@
     padding: .5rem;
     background-color: var(--navAndFooter);
     position: static;
-   bottom: 0;
+    bottom: 0;
 }
-.footer ul{
+
+.footer .logoF {
+    width: 150px;
+}
+
+.footer ul {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: .5rem;
 }
-.footer ul span{
+
+.footer ul span {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.footer ul img{
+.footer ul img {
     width: 1.6rem;
 }
+
 @media screen and (max-width: 700px) {
-    .footer ul img{
+    .footer ul img {
         width: 1rem;
     }
-    .footer ul{
+
+    .footer ul {
         width: 100px;
         display: flex;
-       flex-wrap: wrap;
+        flex-wrap: wrap;
         gap: .5rem;
     }
 }

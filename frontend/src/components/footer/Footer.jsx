@@ -6,7 +6,9 @@ const  Footer =() =>{
   return (
       <div className={`${estilos.footer}`}>
         <ul>
-          <span>&copy;<Logo /></span>
+          <span>&copy;
+            <Logo className={`${estilos.logoF}`} />
+            </span>
           <a href="">
             <img src="/src/img/facebook.svg" alt="" />
           </a>
