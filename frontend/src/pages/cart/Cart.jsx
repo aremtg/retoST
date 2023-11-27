@@ -6,8 +6,8 @@ import MyBoton from "../../components/miniComponents/MyBoton";
 function Cart() {
   return (
     <Box>
-      <div className={`${estilos.contenedorDivs}`}>
-        <div className={`${estilos.listProductos} w-full flex shadow-md`}>
+      <div className={`${estilos.contenedorDivs} bg-black px-1 py-1 rounded-xl`}>
+        <div className={`${estilos.listProductos} bg-white rounded-xl w-full flex shadow-md`}>
           <div className="w-full flex flex-col justify-center gap-2 items-center py-2 sm:p-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -30,24 +30,25 @@ function Cart() {
           </div>
         </div>
 
-        <div className={`${estilos.pagos} flex flex-col shadow-md`}>
-          <div className={`${estilos.total}  flex flex-col`}>
+        <div className={`${estilos.pagos} bg-white rounded-xl flex flex-col shadow-md`}>
+          <div className={`${estilos.total} bg-gray-200 rounded-xl py-1 px-1 w-full flex flex-col`}>
             <h1 className="text-center">Resumen del pedido</h1>
             <span className="text-center">$000</span>
           <MyBoton
-            text={'hh'}
+            text={'Comprar'}
+            className={'my_button bg-black text-white'}
           />
           </div>
           <br />
-          <div className="p-6">
-            <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+          <div className="bg-gray-200 items-center rounded-xl p-6">
+            <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-center antialiased">
               Metodos de pago
             </h5>
           </div>
           <br />
-          <div className="relative flex w-80 flex-col rounded-xl bg-white m-auto text-gray-700 shadow-md">
+          <div className="relative flex w-80 flex-col rounded-xl bg-black m-auto shadow-md">
             <div
-              className={`${estilos.imgPagos} flex items-center relative mx-4 -mt-6 h-40 overflow-hidden rounded-full  text-white shadow-lg shadow-blue-gray-500/40 bg-white px-2`}
+              className={`${estilos.imgPagos} bg-white flex items-center relative mx-4 -mt-6 h-40 overflow-hidden rounded-full  text-white shadow-lg shadow-blue-gray-500/40 px-2`}
             >
               <img src="src/img/paypal.png" alt="" />
               <img src="src/img/mastercard.png" alt="" />

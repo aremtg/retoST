@@ -18,7 +18,8 @@ const Home = () => {
   return (
     <>
       <div>
-        <h2 className="absolute top-36 w-full bg-red-500 px-4 py-2 text-white text-center">"¡Vive el futuro hoy en Tecshope! Descubre lo último en tecnología."</h2>
+        <h2 className="absolute top-36 w-full bg-red-500 px-4 py-2 text-white text-center">
+          "¡Vive el futuro hoy en Tecshope! Descubre lo último en tecnología, en esta navidad queremos ofrecer el mejor regalo"</h2>
       </div>
       <Box>
         <CategoriaSlider />
